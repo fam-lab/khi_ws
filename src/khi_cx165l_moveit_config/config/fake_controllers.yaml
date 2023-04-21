@@ -1,6 +1,5 @@
 controller_list:
   - name: fake_manipulator_controller
-    type: $(arg fake_execution_type)
     joints:
       - joint1
       - joint2
@@ -9,9 +8,5 @@ controller_list:
       - joint5
       - joint6
   - name: fake_tool_controller
-    type: $(arg fake_execution_type)
     joints:
       []
-initial:  # Define initial robot poses per group
-  - group: manipulator
-    pose: home
