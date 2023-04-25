@@ -315,7 +315,7 @@
     <!-- PushCorp Compliant Tool and Spindle -->
 
     <joint name="${prefix}pushcorp" type="fixed">
-      <origin xyz="0 0.0949325000000025 0" rpy="0 1.5707963267949 0" />
+      <origin xyz="0 0.094933 0" rpy="0 1.5708 0" />
       <parent link="${prefix}link6"/>
       <child link="${prefix}pushcorp"/>
     </joint>
