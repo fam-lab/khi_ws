@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<robot name="khi_cx165l" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <link name="world"/>
+
+  <xacro:include filename="$(find khi_cx_description)/urdf/isu_lab.xacro"/>
+
+  <xacro:include filename="$(find khi_cx_description)/urdf/cx165l_macro.xacro"/>
+  <xacro:khi_cx165l prefix="" />
+
+  <xacro:include filename="$(find khi_cx_description)/urdf/pushcorp.xacro"/>
+
+</robot>

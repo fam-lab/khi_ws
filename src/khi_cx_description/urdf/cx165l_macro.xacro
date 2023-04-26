@@ -4,7 +4,6 @@
 
     <xacro:include filename="$(find khi_cx_description)/urdf/cx.transmission.xacro" />
     <xacro:include filename="$(find khi_cx_description)/urdf/common.gazebo.xacro" />
-    <xacro:include filename="$(find khi_cx_description)/urdf/isu_lab.xacro" />
 
     <!-- link rviz colors -->
     <material name="White">
@@ -312,40 +311,5 @@
         <xacro:default_inertial mass="${j6_mass}"/>
     </link>
 
-    <!-- PushCorp Compliant Tool and Spindle -->
-
-    <joint name="${prefix}pushcorp" type="fixed">
-      <origin xyz="0 0.094933 0" rpy="0 1.5708 0" />
-      <parent link="${prefix}link6"/>
-      <child link="${prefix}pushcorp"/>
-    </joint>
-
-    <link name="${prefix}pushcorp">
-        <visual>
-            <origin
-                xyz="0 0 0"
-                rpy="0 0 0" />
-            <geometry>
-                <mesh
-                filename="package://khi_cx_description/meshes/CX165L-PUSHCORP.STL" />
-            </geometry>
-            <material
-                name="">
-                <color
-                rgba="0.75294 0.75294 0.75294 1" />
-            </material>
-        </visual>
-        <collision>
-            <origin
-                xyz="0 0 0"
-                rpy="0 0 0" />
-            <geometry>
-                <mesh
-                filename="package://khi_cx_description/meshes/CX165L-PUSHCORP-HULL.STL" />
-            </geometry>
-        </collision>
-        <xacro:default_inertial mass="${j6_mass}"/>
-    </link>
-  
   </xacro:macro>
 </robot>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <xacro:macro name="default_inertial" params="mass">
+      <inertial>
+        <mass value="${mass}" />
+        <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1" />
+      </inertial>
+    </xacro:macro>
+
+    <!-- PushCorp Adapter Plate, Compliant Tool, Connectors, and Spindle -->
+    <joint name="pushcorp" type="fixed">
+      <origin xyz="0 0.094933 0" rpy="0 1.5708 0" />
+      <parent link="link6"/>
+      <child link="pushcorp"/>
+    </joint>
+
+    <link name="pushcorp">
+        <visual>
+            <origin
+                xyz="0 0 0"
+                rpy="0 0 0" />
+            <geometry>
+                <mesh
+                filename="package://khi_cx_description/meshes/CX165L-PUSHCORP.STL" />
+            </geometry>
+            <material
+                name="">
+                <color
+                rgba="0.75294 0.75294 0.75294 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin
+                xyz="0 0 0"
+                rpy="0 0 0" />
+            <geometry>
+                <mesh
+                filename="package://khi_cx_description/meshes/CX165L-PUSHCORP-HULL.STL" />
+            </geometry>
+        </collision>
+        <xacro:default_inertial mass="1"/>
+    </link>
+  
+</robot>
