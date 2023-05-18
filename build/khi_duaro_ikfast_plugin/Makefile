@@ -48,34 +48,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dan/khi_ws/src
+CMAKE_SOURCE_DIR = /home/dan/khi_ws/src/khi_duaro_ikfast_plugin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dan/khi_ws/build
+CMAKE_BINARY_DIR = /home/dan/khi_ws/build/khi_duaro_ikfast_plugin
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -88,17 +67,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -110,16 +78,27 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
 
-.PHONY : test/fast
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: install/local
+
+.PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
@@ -133,16 +112,37 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /home/dan/khi_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dan/khi_ws/build/CMakeFiles /home/dan/khi_ws/build/khi_duaro_ikfast_plugin/CMakeFiles/progress.marks
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/khi_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/khi_ws/build/khi_duaro_ikfast_plugin/CMakeFiles /home/dan/khi_ws/build/khi_duaro_ikfast_plugin/CMakeFiles/progress.marks
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dan/khi_ws/build/khi_duaro_ikfast_plugin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/clean
+	$(MAKE) -f CMakeFiles/Makefile2 clean
 .PHONY : clean
 
 # The main clean target
@@ -152,348 +152,1149 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/preinstall
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/preinstall
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/dan/khi_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/rule
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/rule
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_nodejs
 
-# Convenience name for target.
-moveit_msgs_generate_messages_nodejs: khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : moveit_msgs_generate_messages_nodejs
+# Build rule for target.
+tf2_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_nodejs
+.PHONY : tf2_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-moveit_msgs_generate_messages_nodejs/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build
-.PHONY : moveit_msgs_generate_messages_nodejs/fast
+tf2_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
+.PHONY : tf2_msgs_generate_messages_nodejs/fast
 
-# Convenience name for target.
-khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_py.dir/rule:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_py.dir/rule
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_py.dir/rule
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_lisp
 
-# Convenience name for target.
-shape_msgs_generate_messages_py: khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_py.dir/rule
-
-.PHONY : shape_msgs_generate_messages_py
+# Build rule for target.
+tf2_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_lisp
+.PHONY : tf2_msgs_generate_messages_lisp
 
 # fast build rule for target.
-shape_msgs_generate_messages_py/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_py.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_py.dir/build
-.PHONY : shape_msgs_generate_messages_py/fast
+tf2_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+.PHONY : tf2_msgs_generate_messages_lisp/fast
 
-# Convenience name for target.
-khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_eus.dir/rule:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_eus.dir/rule
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_eus.dir/rule
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_eus
 
-# Convenience name for target.
-shape_msgs_generate_messages_eus: khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_eus.dir/rule
-
-.PHONY : shape_msgs_generate_messages_eus
+# Build rule for target.
+tf2_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_eus
+.PHONY : tf2_msgs_generate_messages_eus
 
 # fast build rule for target.
-shape_msgs_generate_messages_eus/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_eus.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_eus.dir/build
-.PHONY : shape_msgs_generate_messages_eus/fast
+tf2_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
+.PHONY : tf2_msgs_generate_messages_eus/fast
 
-# Convenience name for target.
-khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_eus.dir/rule:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_eus.dir/rule
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_eus.dir/rule
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_cpp
 
-# Convenience name for target.
-octomap_msgs_generate_messages_eus: khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_eus.dir/rule
-
-.PHONY : octomap_msgs_generate_messages_eus
+# Build rule for target.
+tf2_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_cpp
+.PHONY : tf2_msgs_generate_messages_cpp
 
 # fast build rule for target.
-octomap_msgs_generate_messages_eus/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_eus.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_eus.dir/build
-.PHONY : octomap_msgs_generate_messages_eus/fast
+tf2_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
+.PHONY : tf2_msgs_generate_messages_cpp/fast
 
-# Convenience name for target.
-khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_eus.dir/rule:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_eus.dir/rule
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_eus.dir/rule
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_py
 
-# Convenience name for target.
-moveit_msgs_generate_messages_eus: khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_eus.dir/rule
-
-.PHONY : moveit_msgs_generate_messages_eus
+# Build rule for target.
+actionlib_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_py
+.PHONY : actionlib_generate_messages_py
 
 # fast build rule for target.
-moveit_msgs_generate_messages_eus/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_eus.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_eus.dir/build
-.PHONY : moveit_msgs_generate_messages_eus/fast
+actionlib_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_py.dir/build.make CMakeFiles/actionlib_generate_messages_py.dir/build
+.PHONY : actionlib_generate_messages_py/fast
 
-# Convenience name for target.
-khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/rule:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/rule
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/rule
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_eus
 
-# Convenience name for target.
-object_recognition_msgs_generate_messages_eus: khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/rule
-
-.PHONY : object_recognition_msgs_generate_messages_eus
+# Build rule for target.
+actionlib_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_eus
+.PHONY : actionlib_generate_messages_eus
 
 # fast build rule for target.
-object_recognition_msgs_generate_messages_eus/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/build
-.PHONY : object_recognition_msgs_generate_messages_eus/fast
+actionlib_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_eus.dir/build.make CMakeFiles/actionlib_generate_messages_eus.dir/build
+.PHONY : actionlib_generate_messages_eus/fast
 
-# Convenience name for target.
-khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule
+#=============================================================================
+# Target rules for targets named tf_generate_messages_eus
 
-# Convenience name for target.
-moveit_msgs_generate_messages_cpp: khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : moveit_msgs_generate_messages_cpp
+# Build rule for target.
+tf_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_eus
+.PHONY : tf_generate_messages_eus
 
 # fast build rule for target.
-moveit_msgs_generate_messages_cpp/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build
-.PHONY : moveit_msgs_generate_messages_cpp/fast
+tf_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/tf_generate_messages_eus.dir/build.make CMakeFiles/tf_generate_messages_eus.dir/build
+.PHONY : tf_generate_messages_eus/fast
 
-# Convenience name for target.
-khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule
+#=============================================================================
+# Target rules for targets named octomap_msgs_generate_messages_py
 
-# Convenience name for target.
-object_recognition_msgs_generate_messages_cpp: khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : object_recognition_msgs_generate_messages_cpp
-
-# fast build rule for target.
-object_recognition_msgs_generate_messages_cpp/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build
-.PHONY : object_recognition_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-shape_msgs_generate_messages_cpp: khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : shape_msgs_generate_messages_cpp
-
-# fast build rule for target.
-shape_msgs_generate_messages_cpp/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build
-.PHONY : shape_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-shape_msgs_generate_messages_lisp: khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : shape_msgs_generate_messages_lisp
-
-# fast build rule for target.
-shape_msgs_generate_messages_lisp/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_lisp.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_lisp.dir/build
-.PHONY : shape_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/rule
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-shape_msgs_generate_messages_nodejs: khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : shape_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-shape_msgs_generate_messages_nodejs/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build
-.PHONY : shape_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-object_recognition_msgs_generate_messages_py: khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule
-
-.PHONY : object_recognition_msgs_generate_messages_py
-
-# fast build rule for target.
-object_recognition_msgs_generate_messages_py/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build
-.PHONY : object_recognition_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-object_recognition_msgs_generate_messages_lisp: khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : object_recognition_msgs_generate_messages_lisp
-
-# fast build rule for target.
-object_recognition_msgs_generate_messages_lisp/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build
-.PHONY : object_recognition_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/rule
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-object_recognition_msgs_generate_messages_nodejs: khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : object_recognition_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-object_recognition_msgs_generate_messages_nodejs/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/build
-.PHONY : object_recognition_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-octomap_msgs_generate_messages_cpp: khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : octomap_msgs_generate_messages_cpp
-
-# fast build rule for target.
-octomap_msgs_generate_messages_cpp/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build
-.PHONY : octomap_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-moveit_msgs_generate_messages_lisp: khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : moveit_msgs_generate_messages_lisp
-
-# fast build rule for target.
-moveit_msgs_generate_messages_lisp/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build
-.PHONY : moveit_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-octomap_msgs_generate_messages_py: khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
-
+# Build rule for target.
+octomap_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 octomap_msgs_generate_messages_py
 .PHONY : octomap_msgs_generate_messages_py
 
 # fast build rule for target.
 octomap_msgs_generate_messages_py/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_py.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_py.dir/build
+	$(MAKE) -f CMakeFiles/octomap_msgs_generate_messages_py.dir/build.make CMakeFiles/octomap_msgs_generate_messages_py.dir/build
 .PHONY : octomap_msgs_generate_messages_py/fast
 
-# Convenience name for target.
-khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/rule:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/rule
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/rule
+#=============================================================================
+# Target rules for targets named octomap_msgs_generate_messages_lisp
 
-# Convenience name for target.
-duaro_upper_arm_moveit_ikfast_plugin: khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/rule
-
-.PHONY : duaro_upper_arm_moveit_ikfast_plugin
-
-# fast build rule for target.
-duaro_upper_arm_moveit_ikfast_plugin/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/build
-.PHONY : duaro_upper_arm_moveit_ikfast_plugin/fast
-
-# Convenience name for target.
-khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-octomap_msgs_generate_messages_nodejs: khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : octomap_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-octomap_msgs_generate_messages_nodejs/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build
-.PHONY : octomap_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-moveit_msgs_generate_messages_py: khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule
-
-.PHONY : moveit_msgs_generate_messages_py
-
-# fast build rule for target.
-moveit_msgs_generate_messages_py/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_py.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/moveit_msgs_generate_messages_py.dir/build
-.PHONY : moveit_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-octomap_msgs_generate_messages_lisp: khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
-
+# Build rule for target.
+octomap_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 octomap_msgs_generate_messages_lisp
 .PHONY : octomap_msgs_generate_messages_lisp
 
 # fast build rule for target.
 octomap_msgs_generate_messages_lisp/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build.make CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build
 .PHONY : octomap_msgs_generate_messages_lisp/fast
 
-# Convenience name for target.
-khi_duaro_ikfast_plugin/CMakeFiles/duaro_lower_arm_moveit_ikfast_plugin.dir/rule:
-	cd /home/dan/khi_ws/build && $(MAKE) -f CMakeFiles/Makefile2 khi_duaro_ikfast_plugin/CMakeFiles/duaro_lower_arm_moveit_ikfast_plugin.dir/rule
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/duaro_lower_arm_moveit_ikfast_plugin.dir/rule
+#=============================================================================
+# Target rules for targets named tf_generate_messages_py
 
-# Convenience name for target.
-duaro_lower_arm_moveit_ikfast_plugin: khi_duaro_ikfast_plugin/CMakeFiles/duaro_lower_arm_moveit_ikfast_plugin.dir/rule
+# Build rule for target.
+tf_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_py
+.PHONY : tf_generate_messages_py
 
+# fast build rule for target.
+tf_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/tf_generate_messages_py.dir/build.make CMakeFiles/tf_generate_messages_py.dir/build
+.PHONY : tf_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named object_recognition_msgs_generate_messages_nodejs
+
+# Build rule for target.
+object_recognition_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 object_recognition_msgs_generate_messages_nodejs
+.PHONY : object_recognition_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/build
+.PHONY : object_recognition_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named object_recognition_msgs_generate_messages_eus
+
+# Build rule for target.
+object_recognition_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 object_recognition_msgs_generate_messages_eus
+.PHONY : object_recognition_msgs_generate_messages_eus
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/build.make CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/build
+.PHONY : object_recognition_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named octomap_msgs_generate_messages_eus
+
+# Build rule for target.
+octomap_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 octomap_msgs_generate_messages_eus
+.PHONY : octomap_msgs_generate_messages_eus
+
+# fast build rule for target.
+octomap_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/octomap_msgs_generate_messages_eus.dir/build.make CMakeFiles/octomap_msgs_generate_messages_eus.dir/build
+.PHONY : octomap_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named object_recognition_msgs_generate_messages_cpp
+
+# Build rule for target.
+object_recognition_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 object_recognition_msgs_generate_messages_cpp
+.PHONY : object_recognition_msgs_generate_messages_cpp
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build.make CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build
+.PHONY : object_recognition_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named trajectory_msgs_generate_messages_py
+
+# Build rule for target.
+trajectory_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trajectory_msgs_generate_messages_py
+.PHONY : trajectory_msgs_generate_messages_py
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
+.PHONY : trajectory_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named trajectory_msgs_generate_messages_nodejs
+
+# Build rule for target.
+trajectory_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trajectory_msgs_generate_messages_nodejs
+.PHONY : trajectory_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
+.PHONY : trajectory_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named trajectory_msgs_generate_messages_lisp
+
+# Build rule for target.
+trajectory_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trajectory_msgs_generate_messages_lisp
+.PHONY : trajectory_msgs_generate_messages_lisp
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
+.PHONY : trajectory_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named trajectory_msgs_generate_messages_eus
+
+# Build rule for target.
+trajectory_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trajectory_msgs_generate_messages_eus
+.PHONY : trajectory_msgs_generate_messages_eus
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build
+.PHONY : trajectory_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_cpp
+
+# Build rule for target.
+actionlib_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_cpp
+.PHONY : actionlib_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_cpp.dir/build.make CMakeFiles/actionlib_generate_messages_cpp.dir/build
+.PHONY : actionlib_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_py
+
+# Build rule for target.
+sensor_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_nodejs
+
+# Build rule for target.
+sensor_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_nodejs
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+sensor_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+.PHONY : sensor_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_cpp
+
+# Build rule for target.
+sensor_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named duaro_upper_arm_moveit_ikfast_plugin
+
+# Build rule for target.
+duaro_upper_arm_moveit_ikfast_plugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 duaro_upper_arm_moveit_ikfast_plugin
+.PHONY : duaro_upper_arm_moveit_ikfast_plugin
+
+# fast build rule for target.
+duaro_upper_arm_moveit_ikfast_plugin/fast:
+	$(MAKE) -f CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/build.make CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/build
+.PHONY : duaro_upper_arm_moveit_ikfast_plugin/fast
+
+#=============================================================================
+# Target rules for targets named shape_msgs_generate_messages_py
+
+# Build rule for target.
+shape_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shape_msgs_generate_messages_py
+.PHONY : shape_msgs_generate_messages_py
+
+# fast build rule for target.
+shape_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/shape_msgs_generate_messages_py.dir/build.make CMakeFiles/shape_msgs_generate_messages_py.dir/build
+.PHONY : shape_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named clean_test_results
+
+# Build rule for target.
+clean_test_results: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results
+.PHONY : clean_test_results
+
+# fast build rule for target.
+clean_test_results/fast:
+	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
+.PHONY : clean_test_results/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_nodejs
+
+# Build rule for target.
+geometry_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_nodejs
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geometry_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named visualization_msgs_generate_messages_py
+
+# Build rule for target.
+visualization_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_py
+.PHONY : visualization_msgs_generate_messages_py
+
+# fast build rule for target.
+visualization_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make CMakeFiles/visualization_msgs_generate_messages_py.dir/build
+.PHONY : visualization_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named shape_msgs_generate_messages_nodejs
+
+# Build rule for target.
+shape_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shape_msgs_generate_messages_nodejs
+.PHONY : shape_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+shape_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build
+.PHONY : shape_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_eus
+
+# Build rule for target.
+std_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
+.PHONY : std_msgs_generate_messages_eus
+
+# fast build rule for target.
+std_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/build
+.PHONY : std_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_lisp
+
+# Build rule for target.
+roscpp_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_lisp.dir/build.make CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named octomap_msgs_generate_messages_cpp
+
+# Build rule for target.
+octomap_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 octomap_msgs_generate_messages_cpp
+.PHONY : octomap_msgs_generate_messages_cpp
+
+# fast build rule for target.
+octomap_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build.make CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build
+.PHONY : octomap_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named run_tests
+
+# Build rule for target.
+run_tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests
+.PHONY : run_tests
+
+# fast build rule for target.
+run_tests/fast:
+	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
+.PHONY : run_tests/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_cpp
+
+# Build rule for target.
+tf_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_cpp
+.PHONY : tf_generate_messages_cpp
+
+# fast build rule for target.
+tf_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/tf_generate_messages_cpp.dir/build.make CMakeFiles/tf_generate_messages_cpp.dir/build
+.PHONY : tf_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named doxygen
+
+# Build rule for target.
+doxygen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 doxygen
+.PHONY : doxygen
+
+# fast build rule for target.
+doxygen/fast:
+	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
+.PHONY : doxygen/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_lisp
+
+# Build rule for target.
+actionlib_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_lisp
+.PHONY : actionlib_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_lisp.dir/build.make CMakeFiles/actionlib_generate_messages_lisp.dir/build
+.PHONY : actionlib_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_eus
+
+# Build rule for target.
+actionlib_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_eus
+.PHONY : actionlib_msgs_generate_messages_eus
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+.PHONY : actionlib_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_lisp
+
+# Build rule for target.
+actionlib_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_lisp
+.PHONY : actionlib_msgs_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+.PHONY : actionlib_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_lisp
+
+# Build rule for target.
+std_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_lisp
+
+# Build rule for target.
+geometry_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_lisp
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named object_recognition_msgs_generate_messages_py
+
+# Build rule for target.
+object_recognition_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 object_recognition_msgs_generate_messages_py
+.PHONY : object_recognition_msgs_generate_messages_py
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build.make CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build
+.PHONY : object_recognition_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_lisp
+
+# Build rule for target.
+sensor_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named download_extra_data
+
+# Build rule for target.
+download_extra_data: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 download_extra_data
+.PHONY : download_extra_data
+
+# fast build rule for target.
+download_extra_data/fast:
+	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/build
+.PHONY : download_extra_data/fast
+
+#=============================================================================
+# Target rules for targets named duaro_lower_arm_moveit_ikfast_plugin
+
+# Build rule for target.
+duaro_lower_arm_moveit_ikfast_plugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 duaro_lower_arm_moveit_ikfast_plugin
 .PHONY : duaro_lower_arm_moveit_ikfast_plugin
 
 # fast build rule for target.
 duaro_lower_arm_moveit_ikfast_plugin/fast:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/duaro_lower_arm_moveit_ikfast_plugin.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/duaro_lower_arm_moveit_ikfast_plugin.dir/build
+	$(MAKE) -f CMakeFiles/duaro_lower_arm_moveit_ikfast_plugin.dir/build.make CMakeFiles/duaro_lower_arm_moveit_ikfast_plugin.dir/build
 .PHONY : duaro_lower_arm_moveit_ikfast_plugin/fast
+
+#=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+#=============================================================================
+# Target rules for targets named shape_msgs_generate_messages_cpp
+
+# Build rule for target.
+shape_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shape_msgs_generate_messages_cpp
+.PHONY : shape_msgs_generate_messages_cpp
+
+# fast build rule for target.
+shape_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/shape_msgs_generate_messages_cpp.dir/build.make CMakeFiles/shape_msgs_generate_messages_cpp.dir/build
+.PHONY : shape_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_nodejs
+
+# Build rule for target.
+roscpp_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_nodejs
+.PHONY : roscpp_generate_messages_nodejs
+
+# fast build rule for target.
+roscpp_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+.PHONY : roscpp_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_lisp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_nodejs
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_nodejs
+.PHONY : rosgraph_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named moveit_msgs_generate_messages_cpp
+
+# Build rule for target.
+moveit_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 moveit_msgs_generate_messages_cpp
+.PHONY : moveit_msgs_generate_messages_cpp
+
+# fast build rule for target.
+moveit_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build.make CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build
+.PHONY : moveit_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_py
+
+# Build rule for target.
+std_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
+.PHONY : std_msgs_generate_messages_py
+
+# fast build rule for target.
+std_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named moveit_msgs_generate_messages_lisp
+
+# Build rule for target.
+moveit_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 moveit_msgs_generate_messages_lisp
+.PHONY : moveit_msgs_generate_messages_lisp
+
+# fast build rule for target.
+moveit_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build.make CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build
+.PHONY : moveit_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_eus
+
+# Build rule for target.
+geometry_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_eus
+.PHONY : geometry_msgs_generate_messages_eus
+
+# fast build rule for target.
+geometry_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+.PHONY : geometry_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_cpp
+
+# Build rule for target.
+roscpp_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_cpp.dir/build.make CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named moveit_msgs_generate_messages_nodejs
+
+# Build rule for target.
+moveit_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 moveit_msgs_generate_messages_nodejs
+.PHONY : moveit_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+moveit_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build
+.PHONY : moveit_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_py
+
+# Build rule for target.
+actionlib_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_py
+.PHONY : actionlib_msgs_generate_messages_py
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+.PHONY : actionlib_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named shape_msgs_generate_messages_lisp
+
+# Build rule for target.
+shape_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shape_msgs_generate_messages_lisp
+.PHONY : shape_msgs_generate_messages_lisp
+
+# fast build rule for target.
+shape_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/shape_msgs_generate_messages_lisp.dir/build.make CMakeFiles/shape_msgs_generate_messages_lisp.dir/build
+.PHONY : shape_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_nodejs
+
+# Build rule for target.
+actionlib_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_nodejs
+.PHONY : actionlib_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+.PHONY : actionlib_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_eus
+
+# Build rule for target.
+sensor_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_eus
+.PHONY : sensor_msgs_generate_messages_eus
+
+# fast build rule for target.
+sensor_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+.PHONY : sensor_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_cpp
+
+# Build rule for target.
+actionlib_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_cpp
+.PHONY : actionlib_msgs_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+.PHONY : actionlib_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_cpp
+
+# Build rule for target.
+std_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
+.PHONY : std_msgs_generate_messages_cpp
+
+# fast build rule for target.
+std_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+.PHONY : std_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named object_recognition_msgs_generate_messages_lisp
+
+# Build rule for target.
+object_recognition_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 object_recognition_msgs_generate_messages_lisp
+.PHONY : object_recognition_msgs_generate_messages_lisp
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build.make CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build
+.PHONY : object_recognition_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_cpp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named octomap_msgs_generate_messages_nodejs
+
+# Build rule for target.
+octomap_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 octomap_msgs_generate_messages_nodejs
+.PHONY : octomap_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+octomap_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build
+.PHONY : octomap_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named trajectory_msgs_generate_messages_cpp
+
+# Build rule for target.
+trajectory_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trajectory_msgs_generate_messages_cpp
+.PHONY : trajectory_msgs_generate_messages_cpp
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
+.PHONY : trajectory_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named shape_msgs_generate_messages_eus
+
+# Build rule for target.
+shape_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shape_msgs_generate_messages_eus
+.PHONY : shape_msgs_generate_messages_eus
+
+# fast build rule for target.
+shape_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/shape_msgs_generate_messages_eus.dir/build.make CMakeFiles/shape_msgs_generate_messages_eus.dir/build
+.PHONY : shape_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_cpp
+
+# Build rule for target.
+geometry_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_cpp
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named visualization_msgs_generate_messages_cpp
+
+# Build rule for target.
+visualization_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_cpp
+.PHONY : visualization_msgs_generate_messages_cpp
+
+# fast build rule for target.
+visualization_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
+.PHONY : visualization_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_nodejs
+
+# Build rule for target.
+std_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_nodejs
+.PHONY : std_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+std_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+.PHONY : std_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_py
+
+# Build rule for target.
+geometry_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_py
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named visualization_msgs_generate_messages_lisp
+
+# Build rule for target.
+visualization_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_lisp
+.PHONY : visualization_msgs_generate_messages_lisp
+
+# fast build rule for target.
+visualization_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
+.PHONY : visualization_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_eus
+
+# Build rule for target.
+roscpp_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_eus
+.PHONY : roscpp_generate_messages_eus
+
+# fast build rule for target.
+roscpp_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_eus.dir/build.make CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named visualization_msgs_generate_messages_nodejs
+
+# Build rule for target.
+visualization_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_nodejs
+.PHONY : visualization_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+visualization_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
+.PHONY : visualization_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_nodejs
+
+# Build rule for target.
+tf_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_nodejs
+.PHONY : tf_generate_messages_nodejs
+
+# fast build rule for target.
+tf_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/tf_generate_messages_nodejs.dir/build.make CMakeFiles/tf_generate_messages_nodejs.dir/build
+.PHONY : tf_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_py
+
+# Build rule for target.
+roscpp_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_py.dir/build.make CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_eus
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_lisp
+
+# Build rule for target.
+tf_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_lisp
+.PHONY : tf_generate_messages_lisp
+
+# fast build rule for target.
+tf_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/tf_generate_messages_lisp.dir/build.make CMakeFiles/tf_generate_messages_lisp.dir/build
+.PHONY : tf_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_py
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named moveit_msgs_generate_messages_eus
+
+# Build rule for target.
+moveit_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 moveit_msgs_generate_messages_eus
+.PHONY : moveit_msgs_generate_messages_eus
+
+# fast build rule for target.
+moveit_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/moveit_msgs_generate_messages_eus.dir/build.make CMakeFiles/moveit_msgs_generate_messages_eus.dir/build
+.PHONY : moveit_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named moveit_msgs_generate_messages_py
+
+# Build rule for target.
+moveit_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 moveit_msgs_generate_messages_py
+.PHONY : moveit_msgs_generate_messages_py
+
+# fast build rule for target.
+moveit_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/moveit_msgs_generate_messages_py.dir/build.make CMakeFiles/moveit_msgs_generate_messages_py.dir/build
+.PHONY : moveit_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_py
+
+# Build rule for target.
+tf2_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_py
+.PHONY : tf2_msgs_generate_messages_py
+
+# fast build rule for target.
+tf2_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+.PHONY : tf2_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_nodejs
+
+# Build rule for target.
+actionlib_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_nodejs
+.PHONY : actionlib_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+.PHONY : actionlib_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named visualization_msgs_generate_messages_eus
+
+# Build rule for target.
+visualization_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_eus
+.PHONY : visualization_msgs_generate_messages_eus
+
+# fast build rule for target.
+visualization_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
+.PHONY : visualization_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named _catkin_empty_exported_target
+
+# Build rule for target.
+_catkin_empty_exported_target: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _catkin_empty_exported_target
+.PHONY : _catkin_empty_exported_target
+
+# fast build rule for target.
+_catkin_empty_exported_target/fast:
+	$(MAKE) -f CMakeFiles/_catkin_empty_exported_target.dir/build.make CMakeFiles/_catkin_empty_exported_target.dir/build
+.PHONY : _catkin_empty_exported_target/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) -f gtest/CMakeFiles/gmock.dir/build.make gtest/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) -f gtest/CMakeFiles/gmock_main.dir/build.make gtest/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) -f gtest/gtest/CMakeFiles/gtest.dir/build.make gtest/gtest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) -f gtest/gtest/CMakeFiles/gtest_main.dir/build.make gtest/gtest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
 
 src/duaro_lower_arm_ikfast_moveit_plugin.o: src/duaro_lower_arm_ikfast_moveit_plugin.cpp.o
 
@@ -501,7 +1302,7 @@ src/duaro_lower_arm_ikfast_moveit_plugin.o: src/duaro_lower_arm_ikfast_moveit_pl
 
 # target to build an object file
 src/duaro_lower_arm_ikfast_moveit_plugin.cpp.o:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/duaro_lower_arm_moveit_ikfast_plugin.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/duaro_lower_arm_moveit_ikfast_plugin.dir/src/duaro_lower_arm_ikfast_moveit_plugin.cpp.o
+	$(MAKE) -f CMakeFiles/duaro_lower_arm_moveit_ikfast_plugin.dir/build.make CMakeFiles/duaro_lower_arm_moveit_ikfast_plugin.dir/src/duaro_lower_arm_ikfast_moveit_plugin.cpp.o
 .PHONY : src/duaro_lower_arm_ikfast_moveit_plugin.cpp.o
 
 src/duaro_lower_arm_ikfast_moveit_plugin.i: src/duaro_lower_arm_ikfast_moveit_plugin.cpp.i
@@ -510,7 +1311,7 @@ src/duaro_lower_arm_ikfast_moveit_plugin.i: src/duaro_lower_arm_ikfast_moveit_pl
 
 # target to preprocess a source file
 src/duaro_lower_arm_ikfast_moveit_plugin.cpp.i:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/duaro_lower_arm_moveit_ikfast_plugin.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/duaro_lower_arm_moveit_ikfast_plugin.dir/src/duaro_lower_arm_ikfast_moveit_plugin.cpp.i
+	$(MAKE) -f CMakeFiles/duaro_lower_arm_moveit_ikfast_plugin.dir/build.make CMakeFiles/duaro_lower_arm_moveit_ikfast_plugin.dir/src/duaro_lower_arm_ikfast_moveit_plugin.cpp.i
 .PHONY : src/duaro_lower_arm_ikfast_moveit_plugin.cpp.i
 
 src/duaro_lower_arm_ikfast_moveit_plugin.s: src/duaro_lower_arm_ikfast_moveit_plugin.cpp.s
@@ -519,7 +1320,7 @@ src/duaro_lower_arm_ikfast_moveit_plugin.s: src/duaro_lower_arm_ikfast_moveit_pl
 
 # target to generate assembly for a file
 src/duaro_lower_arm_ikfast_moveit_plugin.cpp.s:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/duaro_lower_arm_moveit_ikfast_plugin.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/duaro_lower_arm_moveit_ikfast_plugin.dir/src/duaro_lower_arm_ikfast_moveit_plugin.cpp.s
+	$(MAKE) -f CMakeFiles/duaro_lower_arm_moveit_ikfast_plugin.dir/build.make CMakeFiles/duaro_lower_arm_moveit_ikfast_plugin.dir/src/duaro_lower_arm_ikfast_moveit_plugin.cpp.s
 .PHONY : src/duaro_lower_arm_ikfast_moveit_plugin.cpp.s
 
 src/duaro_upper_arm_ikfast_moveit_plugin.o: src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o
@@ -528,7 +1329,7 @@ src/duaro_upper_arm_ikfast_moveit_plugin.o: src/duaro_upper_arm_ikfast_moveit_pl
 
 # target to build an object file
 src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o
+	$(MAKE) -f CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/build.make CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o
 .PHONY : src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o
 
 src/duaro_upper_arm_ikfast_moveit_plugin.i: src/duaro_upper_arm_ikfast_moveit_plugin.cpp.i
@@ -537,7 +1338,7 @@ src/duaro_upper_arm_ikfast_moveit_plugin.i: src/duaro_upper_arm_ikfast_moveit_pl
 
 # target to preprocess a source file
 src/duaro_upper_arm_ikfast_moveit_plugin.cpp.i:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.i
+	$(MAKE) -f CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/build.make CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.i
 .PHONY : src/duaro_upper_arm_ikfast_moveit_plugin.cpp.i
 
 src/duaro_upper_arm_ikfast_moveit_plugin.s: src/duaro_upper_arm_ikfast_moveit_plugin.cpp.s
@@ -546,7 +1347,7 @@ src/duaro_upper_arm_ikfast_moveit_plugin.s: src/duaro_upper_arm_ikfast_moveit_pl
 
 # target to generate assembly for a file
 src/duaro_upper_arm_ikfast_moveit_plugin.cpp.s:
-	cd /home/dan/khi_ws/build && $(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.s
+	$(MAKE) -f CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/build.make CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.s
 .PHONY : src/duaro_upper_arm_ikfast_moveit_plugin.cpp.s
 
 # Help Target
@@ -555,35 +1356,100 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... list_install_components"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... install/local"
 	@echo "... install/strip"
-	@echo "... moveit_msgs_generate_messages_nodejs"
-	@echo "... shape_msgs_generate_messages_py"
-	@echo "... shape_msgs_generate_messages_eus"
-	@echo "... octomap_msgs_generate_messages_eus"
-	@echo "... moveit_msgs_generate_messages_eus"
-	@echo "... object_recognition_msgs_generate_messages_eus"
-	@echo "... moveit_msgs_generate_messages_cpp"
-	@echo "... object_recognition_msgs_generate_messages_cpp"
-	@echo "... shape_msgs_generate_messages_cpp"
-	@echo "... shape_msgs_generate_messages_lisp"
-	@echo "... shape_msgs_generate_messages_nodejs"
-	@echo "... object_recognition_msgs_generate_messages_py"
-	@echo "... object_recognition_msgs_generate_messages_lisp"
-	@echo "... object_recognition_msgs_generate_messages_nodejs"
-	@echo "... octomap_msgs_generate_messages_cpp"
-	@echo "... moveit_msgs_generate_messages_lisp"
+	@echo "... tf2_msgs_generate_messages_nodejs"
+	@echo "... tf2_msgs_generate_messages_lisp"
+	@echo "... tf2_msgs_generate_messages_eus"
+	@echo "... tf2_msgs_generate_messages_cpp"
+	@echo "... actionlib_generate_messages_py"
+	@echo "... actionlib_generate_messages_eus"
+	@echo "... rebuild_cache"
+	@echo "... tf_generate_messages_eus"
 	@echo "... octomap_msgs_generate_messages_py"
+	@echo "... octomap_msgs_generate_messages_lisp"
+	@echo "... tf_generate_messages_py"
+	@echo "... object_recognition_msgs_generate_messages_nodejs"
+	@echo "... object_recognition_msgs_generate_messages_eus"
+	@echo "... octomap_msgs_generate_messages_eus"
+	@echo "... object_recognition_msgs_generate_messages_cpp"
+	@echo "... trajectory_msgs_generate_messages_py"
+	@echo "... install/local"
+	@echo "... trajectory_msgs_generate_messages_nodejs"
+	@echo "... trajectory_msgs_generate_messages_lisp"
+	@echo "... trajectory_msgs_generate_messages_eus"
+	@echo "... actionlib_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... sensor_msgs_generate_messages_nodejs"
+	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... duaro_upper_arm_moveit_ikfast_plugin"
+	@echo "... shape_msgs_generate_messages_py"
+	@echo "... clean_test_results"
+	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... visualization_msgs_generate_messages_py"
+	@echo "... shape_msgs_generate_messages_nodejs"
+	@echo "... std_msgs_generate_messages_eus"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... octomap_msgs_generate_messages_cpp"
+	@echo "... run_tests"
+	@echo "... tf_generate_messages_cpp"
+	@echo "... doxygen"
+	@echo "... actionlib_generate_messages_lisp"
+	@echo "... actionlib_msgs_generate_messages_eus"
+	@echo "... actionlib_msgs_generate_messages_lisp"
+	@echo "... install"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... object_recognition_msgs_generate_messages_py"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... download_extra_data"
+	@echo "... duaro_lower_arm_moveit_ikfast_plugin"
+	@echo "... tests"
+	@echo "... shape_msgs_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... moveit_msgs_generate_messages_cpp"
+	@echo "... std_msgs_generate_messages_py"
+	@echo "... moveit_msgs_generate_messages_lisp"
+	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... moveit_msgs_generate_messages_nodejs"
+	@echo "... actionlib_msgs_generate_messages_py"
+	@echo "... shape_msgs_generate_messages_lisp"
+	@echo "... actionlib_generate_messages_nodejs"
+	@echo "... sensor_msgs_generate_messages_eus"
+	@echo "... actionlib_msgs_generate_messages_cpp"
+	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... object_recognition_msgs_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... test"
 	@echo "... octomap_msgs_generate_messages_nodejs"
-	@echo "... install"
+	@echo "... trajectory_msgs_generate_messages_cpp"
+	@echo "... shape_msgs_generate_messages_eus"
+	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... visualization_msgs_generate_messages_cpp"
+	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... visualization_msgs_generate_messages_lisp"
+	@echo "... list_install_components"
+	@echo "... roscpp_generate_messages_eus"
+	@echo "... visualization_msgs_generate_messages_nodejs"
+	@echo "... tf_generate_messages_nodejs"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... tf_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... moveit_msgs_generate_messages_eus"
 	@echo "... moveit_msgs_generate_messages_py"
-	@echo "... octomap_msgs_generate_messages_lisp"
-	@echo "... duaro_lower_arm_moveit_ikfast_plugin"
+	@echo "... tf2_msgs_generate_messages_py"
+	@echo "... actionlib_msgs_generate_messages_nodejs"
+	@echo "... visualization_msgs_generate_messages_eus"
+	@echo "... _catkin_empty_exported_target"
+	@echo "... gmock"
+	@echo "... gmock_main"
+	@echo "... gtest"
+	@echo "... gtest_main"
 	@echo "... src/duaro_lower_arm_ikfast_moveit_plugin.o"
 	@echo "... src/duaro_lower_arm_ikfast_moveit_plugin.i"
 	@echo "... src/duaro_lower_arm_ikfast_moveit_plugin.s"
@@ -601,6 +1467,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/dan/khi_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

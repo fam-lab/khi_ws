@@ -43,66 +43,66 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dan/khi_ws/src
+CMAKE_SOURCE_DIR = /home/dan/khi_ws/src/khi_robot_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dan/khi_ws/build
+CMAKE_BINARY_DIR = /home/dan/khi_ws/build/khi_robot_control
 
 # Include any dependencies generated for this target.
-include khi_robot_control/CMakeFiles/main.dir/depend.make
+include CMakeFiles/main.dir/depend.make
 
 # Include the progress variables for this target.
-include khi_robot_control/CMakeFiles/main.dir/progress.make
+include CMakeFiles/main.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include khi_robot_control/CMakeFiles/main.dir/flags.make
+include CMakeFiles/main.dir/flags.make
 
-khi_robot_control/CMakeFiles/main.dir/src/main.cpp.o: khi_robot_control/CMakeFiles/main.dir/flags.make
-khi_robot_control/CMakeFiles/main.dir/src/main.cpp.o: /home/dan/khi_ws/src/khi_robot_control/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dan/khi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object khi_robot_control/CMakeFiles/main.dir/src/main.cpp.o"
-	cd /home/dan/khi_ws/build/khi_robot_control && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/main.cpp.o -c /home/dan/khi_ws/src/khi_robot_control/src/main.cpp
+CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/main.cpp.o: /home/dan/khi_ws/src/khi_robot_control/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dan/khi_ws/build/khi_robot_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/main.cpp.o -c /home/dan/khi_ws/src/khi_robot_control/src/main.cpp
 
-khi_robot_control/CMakeFiles/main.dir/src/main.cpp.i: cmake_force
+CMakeFiles/main.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/main.cpp.i"
-	cd /home/dan/khi_ws/build/khi_robot_control && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dan/khi_ws/src/khi_robot_control/src/main.cpp > CMakeFiles/main.dir/src/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dan/khi_ws/src/khi_robot_control/src/main.cpp > CMakeFiles/main.dir/src/main.cpp.i
 
-khi_robot_control/CMakeFiles/main.dir/src/main.cpp.s: cmake_force
+CMakeFiles/main.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/main.cpp.s"
-	cd /home/dan/khi_ws/build/khi_robot_control && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dan/khi_ws/src/khi_robot_control/src/main.cpp -o CMakeFiles/main.dir/src/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dan/khi_ws/src/khi_robot_control/src/main.cpp -o CMakeFiles/main.dir/src/main.cpp.s
 
-khi_robot_control/CMakeFiles/main.dir/src/main.cpp.o.requires:
+CMakeFiles/main.dir/src/main.cpp.o.requires:
 
-.PHONY : khi_robot_control/CMakeFiles/main.dir/src/main.cpp.o.requires
+.PHONY : CMakeFiles/main.dir/src/main.cpp.o.requires
 
-khi_robot_control/CMakeFiles/main.dir/src/main.cpp.o.provides: khi_robot_control/CMakeFiles/main.dir/src/main.cpp.o.requires
-	$(MAKE) -f khi_robot_control/CMakeFiles/main.dir/build.make khi_robot_control/CMakeFiles/main.dir/src/main.cpp.o.provides.build
-.PHONY : khi_robot_control/CMakeFiles/main.dir/src/main.cpp.o.provides
+CMakeFiles/main.dir/src/main.cpp.o.provides: CMakeFiles/main.dir/src/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.o.provides.build
+.PHONY : CMakeFiles/main.dir/src/main.cpp.o.provides
 
-khi_robot_control/CMakeFiles/main.dir/src/main.cpp.o.provides.build: khi_robot_control/CMakeFiles/main.dir/src/main.cpp.o
+CMakeFiles/main.dir/src/main.cpp.o.provides.build: CMakeFiles/main.dir/src/main.cpp.o
 
 
-khi_robot_control/CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o: khi_robot_control/CMakeFiles/main.dir/flags.make
-khi_robot_control/CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o: /home/dan/khi_ws/src/khi_robot_control/src/khi_robot_hardware_interface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dan/khi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object khi_robot_control/CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o"
-	cd /home/dan/khi_ws/build/khi_robot_control && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o -c /home/dan/khi_ws/src/khi_robot_control/src/khi_robot_hardware_interface.cpp
+CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o: /home/dan/khi_ws/src/khi_robot_control/src/khi_robot_hardware_interface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dan/khi_ws/build/khi_robot_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o -c /home/dan/khi_ws/src/khi_robot_control/src/khi_robot_hardware_interface.cpp
 
-khi_robot_control/CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.i: cmake_force
+CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.i"
-	cd /home/dan/khi_ws/build/khi_robot_control && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dan/khi_ws/src/khi_robot_control/src/khi_robot_hardware_interface.cpp > CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dan/khi_ws/src/khi_robot_control/src/khi_robot_hardware_interface.cpp > CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.i
 
-khi_robot_control/CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.s: cmake_force
+CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.s"
-	cd /home/dan/khi_ws/build/khi_robot_control && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dan/khi_ws/src/khi_robot_control/src/khi_robot_hardware_interface.cpp -o CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dan/khi_ws/src/khi_robot_control/src/khi_robot_hardware_interface.cpp -o CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.s
 
-khi_robot_control/CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o.requires:
+CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o.requires:
 
-.PHONY : khi_robot_control/CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o.requires
+.PHONY : CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o.requires
 
-khi_robot_control/CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o.provides: khi_robot_control/CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o.requires
-	$(MAKE) -f khi_robot_control/CMakeFiles/main.dir/build.make khi_robot_control/CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o.provides.build
-.PHONY : khi_robot_control/CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o.provides
+CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o.provides: CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o.requires
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o.provides.build
+.PHONY : CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o.provides
 
-khi_robot_control/CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o.provides.build: khi_robot_control/CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o
+CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o.provides.build: CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o
 
 
 # Object files for target main
@@ -113,9 +113,9 @@ main_OBJECTS = \
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: khi_robot_control/CMakeFiles/main.dir/src/main.cpp.o
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: khi_robot_control/CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: khi_robot_control/CMakeFiles/main.dir/build.make
+/home/dan/khi_ws/devel/lib/khi_robot_control/main: CMakeFiles/main.dir/src/main.cpp.o
+/home/dan/khi_ws/devel/lib/khi_robot_control/main: CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o
+/home/dan/khi_ws/devel/lib/khi_robot_control/main: CMakeFiles/main.dir/build.make
 /home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libcontroller_manager.so
 /home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/liburdf.so
 /home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
@@ -196,25 +196,25 @@ main_EXTERNAL_OBJECTS =
 /home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
 /home/dan/khi_ws/devel/lib/khi_robot_control/main: /home/dan/khi_ws/src/khi_robot_control/lib/libkrnx-x86_64.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: khi_robot_control/CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dan/khi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/dan/khi_ws/devel/lib/khi_robot_control/main"
-	cd /home/dan/khi_ws/build/khi_robot_control && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
+/home/dan/khi_ws/devel/lib/khi_robot_control/main: CMakeFiles/main.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dan/khi_ws/build/khi_robot_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/dan/khi_ws/devel/lib/khi_robot_control/main"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-khi_robot_control/CMakeFiles/main.dir/build: /home/dan/khi_ws/devel/lib/khi_robot_control/main
+CMakeFiles/main.dir/build: /home/dan/khi_ws/devel/lib/khi_robot_control/main
 
-.PHONY : khi_robot_control/CMakeFiles/main.dir/build
+.PHONY : CMakeFiles/main.dir/build
 
-khi_robot_control/CMakeFiles/main.dir/requires: khi_robot_control/CMakeFiles/main.dir/src/main.cpp.o.requires
-khi_robot_control/CMakeFiles/main.dir/requires: khi_robot_control/CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o.requires
+CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/main.cpp.o.requires
+CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o.requires
 
-.PHONY : khi_robot_control/CMakeFiles/main.dir/requires
+.PHONY : CMakeFiles/main.dir/requires
 
-khi_robot_control/CMakeFiles/main.dir/clean:
-	cd /home/dan/khi_ws/build/khi_robot_control && $(CMAKE_COMMAND) -P CMakeFiles/main.dir/cmake_clean.cmake
-.PHONY : khi_robot_control/CMakeFiles/main.dir/clean
+CMakeFiles/main.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles/main.dir/cmake_clean.cmake
+.PHONY : CMakeFiles/main.dir/clean
 
-khi_robot_control/CMakeFiles/main.dir/depend:
-	cd /home/dan/khi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dan/khi_ws/src /home/dan/khi_ws/src/khi_robot_control /home/dan/khi_ws/build /home/dan/khi_ws/build/khi_robot_control /home/dan/khi_ws/build/khi_robot_control/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : khi_robot_control/CMakeFiles/main.dir/depend
+CMakeFiles/main.dir/depend:
+	cd /home/dan/khi_ws/build/khi_robot_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dan/khi_ws/src/khi_robot_control /home/dan/khi_ws/src/khi_robot_control /home/dan/khi_ws/build/khi_robot_control /home/dan/khi_ws/build/khi_robot_control /home/dan/khi_ws/build/khi_robot_control/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles/main.dir/depend
 

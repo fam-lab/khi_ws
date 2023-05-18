@@ -55,7 +55,7 @@
     </xacro:macro>
 
     <joint name="${prefix}base_link_joint" type="fixed">
-        <parent link="base_plate" />
+        <parent link="world" />
         <child link="base_link" />
         <origin rpy="0 0 0" xyz="0 0 0" />
     </joint>
@@ -128,7 +128,7 @@
 
     <!-- Link 2 -->
     <joint name="${prefix}joint2" type="revolute">
-      <axis xyz="1 0 0" rpy="0 0 0" />
+      <axis xyz="-1 0 0" rpy="0 0 0" />
       <limit effort="1000.0" lower="${j2_lower_limit}" upper="${j2_upper_limit}" velocity="${j2_velocity_limit}"/>
       <origin xyz="0 0.3 0" rpy="0 0 0" />
       <parent link="${prefix}link1"/>

@@ -43,42 +43,42 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dan/khi_ws/src
+CMAKE_SOURCE_DIR = /home/dan/khi_ws/src/khi_duaro_ikfast_plugin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dan/khi_ws/build
+CMAKE_BINARY_DIR = /home/dan/khi_ws/build/khi_duaro_ikfast_plugin
 
 # Include any dependencies generated for this target.
-include khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/depend.make
+include CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/depend.make
 
 # Include the progress variables for this target.
-include khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/progress.make
+include CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/flags.make
+include CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/flags.make
 
-khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o: khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/flags.make
-khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o: /home/dan/khi_ws/src/khi_duaro_ikfast_plugin/src/duaro_upper_arm_ikfast_moveit_plugin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dan/khi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o"
-	cd /home/dan/khi_ws/build/khi_duaro_ikfast_plugin && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o -c /home/dan/khi_ws/src/khi_duaro_ikfast_plugin/src/duaro_upper_arm_ikfast_moveit_plugin.cpp
+CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o: CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/flags.make
+CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o: /home/dan/khi_ws/src/khi_duaro_ikfast_plugin/src/duaro_upper_arm_ikfast_moveit_plugin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dan/khi_ws/build/khi_duaro_ikfast_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o -c /home/dan/khi_ws/src/khi_duaro_ikfast_plugin/src/duaro_upper_arm_ikfast_moveit_plugin.cpp
 
-khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.i: cmake_force
+CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.i"
-	cd /home/dan/khi_ws/build/khi_duaro_ikfast_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dan/khi_ws/src/khi_duaro_ikfast_plugin/src/duaro_upper_arm_ikfast_moveit_plugin.cpp > CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dan/khi_ws/src/khi_duaro_ikfast_plugin/src/duaro_upper_arm_ikfast_moveit_plugin.cpp > CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.i
 
-khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.s: cmake_force
+CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.s"
-	cd /home/dan/khi_ws/build/khi_duaro_ikfast_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dan/khi_ws/src/khi_duaro_ikfast_plugin/src/duaro_upper_arm_ikfast_moveit_plugin.cpp -o CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dan/khi_ws/src/khi_duaro_ikfast_plugin/src/duaro_upper_arm_ikfast_moveit_plugin.cpp -o CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.s
 
-khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o.requires:
+CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o.requires:
 
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o.requires
+.PHONY : CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o.requires
 
-khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o.provides: khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o.requires
-	$(MAKE) -f khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/build.make khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o.provides.build
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o.provides
+CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o.provides: CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o.requires
+	$(MAKE) -f CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/build.make CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o.provides.build
+.PHONY : CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o.provides
 
-khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o.provides.build: khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o
+CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o.provides.build: CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o
 
 
 # Object files for target duaro_upper_arm_moveit_ikfast_plugin
@@ -88,8 +88,8 @@ duaro_upper_arm_moveit_ikfast_plugin_OBJECTS = \
 # External object files for target duaro_upper_arm_moveit_ikfast_plugin
 duaro_upper_arm_moveit_ikfast_plugin_EXTERNAL_OBJECTS =
 
-/home/dan/khi_ws/devel/lib/libduaro_upper_arm_moveit_ikfast_plugin.so: khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o
-/home/dan/khi_ws/devel/lib/libduaro_upper_arm_moveit_ikfast_plugin.so: khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/build.make
+/home/dan/khi_ws/devel/lib/libduaro_upper_arm_moveit_ikfast_plugin.so: CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o
+/home/dan/khi_ws/devel/lib/libduaro_upper_arm_moveit_ikfast_plugin.so: CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/build.make
 /home/dan/khi_ws/devel/lib/libduaro_upper_arm_moveit_ikfast_plugin.so: /opt/ros/kinetic/lib/libmoveit_exceptions.so
 /home/dan/khi_ws/devel/lib/libduaro_upper_arm_moveit_ikfast_plugin.so: /opt/ros/kinetic/lib/libmoveit_background_processing.so
 /home/dan/khi_ws/devel/lib/libduaro_upper_arm_moveit_ikfast_plugin.so: /opt/ros/kinetic/lib/libmoveit_kinematics_base.so
@@ -164,24 +164,24 @@ duaro_upper_arm_moveit_ikfast_plugin_EXTERNAL_OBJECTS =
 /home/dan/khi_ws/devel/lib/libduaro_upper_arm_moveit_ikfast_plugin.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
 /home/dan/khi_ws/devel/lib/libduaro_upper_arm_moveit_ikfast_plugin.so: /usr/lib/liblapack.so
 /home/dan/khi_ws/devel/lib/libduaro_upper_arm_moveit_ikfast_plugin.so: /usr/lib/libblas.so
-/home/dan/khi_ws/devel/lib/libduaro_upper_arm_moveit_ikfast_plugin.so: khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dan/khi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/dan/khi_ws/devel/lib/libduaro_upper_arm_moveit_ikfast_plugin.so"
-	cd /home/dan/khi_ws/build/khi_duaro_ikfast_plugin && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/link.txt --verbose=$(VERBOSE)
+/home/dan/khi_ws/devel/lib/libduaro_upper_arm_moveit_ikfast_plugin.so: CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dan/khi_ws/build/khi_duaro_ikfast_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/dan/khi_ws/devel/lib/libduaro_upper_arm_moveit_ikfast_plugin.so"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/build: /home/dan/khi_ws/devel/lib/libduaro_upper_arm_moveit_ikfast_plugin.so
+CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/build: /home/dan/khi_ws/devel/lib/libduaro_upper_arm_moveit_ikfast_plugin.so
 
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/build
+.PHONY : CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/build
 
-khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/requires: khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o.requires
+CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/requires: CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o.requires
 
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/requires
+.PHONY : CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/requires
 
-khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/clean:
-	cd /home/dan/khi_ws/build/khi_duaro_ikfast_plugin && $(CMAKE_COMMAND) -P CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/cmake_clean.cmake
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/clean
+CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/cmake_clean.cmake
+.PHONY : CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/clean
 
-khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/depend:
-	cd /home/dan/khi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dan/khi_ws/src /home/dan/khi_ws/src/khi_duaro_ikfast_plugin /home/dan/khi_ws/build /home/dan/khi_ws/build/khi_duaro_ikfast_plugin /home/dan/khi_ws/build/khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/depend
+CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/depend:
+	cd /home/dan/khi_ws/build/khi_duaro_ikfast_plugin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dan/khi_ws/src/khi_duaro_ikfast_plugin /home/dan/khi_ws/src/khi_duaro_ikfast_plugin /home/dan/khi_ws/build/khi_duaro_ikfast_plugin /home/dan/khi_ws/build/khi_duaro_ikfast_plugin /home/dan/khi_ws/build/khi_duaro_ikfast_plugin/CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/depend
 

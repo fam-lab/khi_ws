@@ -43,42 +43,42 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dan/khi_ws/src
+CMAKE_SOURCE_DIR = /home/dan/khi_ws/src/khi_cx_description
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dan/khi_ws/build
+CMAKE_BINARY_DIR = /home/dan/khi_ws/build/khi_cx_description
 
 # Include any dependencies generated for this target.
-include khi_cx_description/CMakeFiles/cx_demo.dir/depend.make
+include CMakeFiles/cx_demo.dir/depend.make
 
 # Include the progress variables for this target.
-include khi_cx_description/CMakeFiles/cx_demo.dir/progress.make
+include CMakeFiles/cx_demo.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include khi_cx_description/CMakeFiles/cx_demo.dir/flags.make
+include CMakeFiles/cx_demo.dir/flags.make
 
-khi_cx_description/CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o: khi_cx_description/CMakeFiles/cx_demo.dir/flags.make
-khi_cx_description/CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o: /home/dan/khi_ws/src/khi_cx_description/src/cx_demo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dan/khi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object khi_cx_description/CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o"
-	cd /home/dan/khi_ws/build/khi_cx_description && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o -c /home/dan/khi_ws/src/khi_cx_description/src/cx_demo.cpp
+CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o: CMakeFiles/cx_demo.dir/flags.make
+CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o: /home/dan/khi_ws/src/khi_cx_description/src/cx_demo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dan/khi_ws/build/khi_cx_description/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o -c /home/dan/khi_ws/src/khi_cx_description/src/cx_demo.cpp
 
-khi_cx_description/CMakeFiles/cx_demo.dir/src/cx_demo.cpp.i: cmake_force
+CMakeFiles/cx_demo.dir/src/cx_demo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cx_demo.dir/src/cx_demo.cpp.i"
-	cd /home/dan/khi_ws/build/khi_cx_description && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dan/khi_ws/src/khi_cx_description/src/cx_demo.cpp > CMakeFiles/cx_demo.dir/src/cx_demo.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dan/khi_ws/src/khi_cx_description/src/cx_demo.cpp > CMakeFiles/cx_demo.dir/src/cx_demo.cpp.i
 
-khi_cx_description/CMakeFiles/cx_demo.dir/src/cx_demo.cpp.s: cmake_force
+CMakeFiles/cx_demo.dir/src/cx_demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cx_demo.dir/src/cx_demo.cpp.s"
-	cd /home/dan/khi_ws/build/khi_cx_description && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dan/khi_ws/src/khi_cx_description/src/cx_demo.cpp -o CMakeFiles/cx_demo.dir/src/cx_demo.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dan/khi_ws/src/khi_cx_description/src/cx_demo.cpp -o CMakeFiles/cx_demo.dir/src/cx_demo.cpp.s
 
-khi_cx_description/CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o.requires:
+CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o.requires:
 
-.PHONY : khi_cx_description/CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o.requires
+.PHONY : CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o.requires
 
-khi_cx_description/CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o.provides: khi_cx_description/CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o.requires
-	$(MAKE) -f khi_cx_description/CMakeFiles/cx_demo.dir/build.make khi_cx_description/CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o.provides.build
-.PHONY : khi_cx_description/CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o.provides
+CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o.provides: CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cx_demo.dir/build.make CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o.provides.build
+.PHONY : CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o.provides
 
-khi_cx_description/CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o.provides.build: khi_cx_description/CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o
+CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o.provides.build: CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o
 
 
 # Object files for target cx_demo
@@ -88,8 +88,8 @@ cx_demo_OBJECTS = \
 # External object files for target cx_demo
 cx_demo_EXTERNAL_OBJECTS =
 
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: khi_cx_description/CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: khi_cx_description/CMakeFiles/cx_demo.dir/build.make
+/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o
+/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: CMakeFiles/cx_demo.dir/build.make
 /home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libcontroller_manager.so
 /home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libgazebo_ros_api_plugin.so
 /home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libgazebo_ros_paths_plugin.so
@@ -145,24 +145,24 @@ cx_demo_EXTERNAL_OBJECTS =
 /home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 /home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: khi_cx_description/CMakeFiles/cx_demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dan/khi_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo"
-	cd /home/dan/khi_ws/build/khi_cx_description && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cx_demo.dir/link.txt --verbose=$(VERBOSE)
+/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: CMakeFiles/cx_demo.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dan/khi_ws/build/khi_cx_description/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cx_demo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-khi_cx_description/CMakeFiles/cx_demo.dir/build: /home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo
+CMakeFiles/cx_demo.dir/build: /home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo
 
-.PHONY : khi_cx_description/CMakeFiles/cx_demo.dir/build
+.PHONY : CMakeFiles/cx_demo.dir/build
 
-khi_cx_description/CMakeFiles/cx_demo.dir/requires: khi_cx_description/CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o.requires
+CMakeFiles/cx_demo.dir/requires: CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o.requires
 
-.PHONY : khi_cx_description/CMakeFiles/cx_demo.dir/requires
+.PHONY : CMakeFiles/cx_demo.dir/requires
 
-khi_cx_description/CMakeFiles/cx_demo.dir/clean:
-	cd /home/dan/khi_ws/build/khi_cx_description && $(CMAKE_COMMAND) -P CMakeFiles/cx_demo.dir/cmake_clean.cmake
-.PHONY : khi_cx_description/CMakeFiles/cx_demo.dir/clean
+CMakeFiles/cx_demo.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles/cx_demo.dir/cmake_clean.cmake
+.PHONY : CMakeFiles/cx_demo.dir/clean
 
-khi_cx_description/CMakeFiles/cx_demo.dir/depend:
-	cd /home/dan/khi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dan/khi_ws/src /home/dan/khi_ws/src/khi_cx_description /home/dan/khi_ws/build /home/dan/khi_ws/build/khi_cx_description /home/dan/khi_ws/build/khi_cx_description/CMakeFiles/cx_demo.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : khi_cx_description/CMakeFiles/cx_demo.dir/depend
+CMakeFiles/cx_demo.dir/depend:
+	cd /home/dan/khi_ws/build/khi_cx_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dan/khi_ws/src/khi_cx_description /home/dan/khi_ws/src/khi_cx_description /home/dan/khi_ws/build/khi_cx_description /home/dan/khi_ws/build/khi_cx_description /home/dan/khi_ws/build/khi_cx_description/CMakeFiles/cx_demo.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles/cx_demo.dir/depend
 

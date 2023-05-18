@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target duaro_upper_arm_moveit_ikfast_plugin[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/duaro_upper_arm_moveit_ikfast_plugin.dir/src/duaro_upper_arm_ikfast_moveit_plugin.cpp.o[0m
+[35m[1mScanning dependencies of target duaro_lower_arm_moveit_ikfast_plugin[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/duaro_lower_arm_moveit_ikfast_plugin.dir/src/duaro_lower_arm_ikfast_moveit_plugin.cpp.o[0m
+[ 75%] [32m[1mLinking CXX shared library /home/dan/khi_ws/devel/lib/libduaro_upper_arm_moveit_ikfast_plugin.so[0m
+[ 75%] Built target duaro_upper_arm_moveit_ikfast_plugin
+[100%] [32m[1mLinking CXX shared library /home/dan/khi_ws/devel/lib/libduaro_lower_arm_moveit_ikfast_plugin.so[0m
+[100%] Built target duaro_lower_arm_moveit_ikfast_plugin

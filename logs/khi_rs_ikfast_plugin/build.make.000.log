@@ -1,0 +1,12 @@
+[35m[1mScanning dependencies of target khi_rs025n_manipulator_moveit_ikfast_plugin[0m
+[35m[1mScanning dependencies of target khi_rs013n_manipulator_moveit_ikfast_plugin[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/khi_rs025n_manipulator_moveit_ikfast_plugin.dir/src/khi_rs025n_manipulator_ikfast_moveit_plugin.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/khi_rs013n_manipulator_moveit_ikfast_plugin.dir/src/khi_rs013n_manipulator_ikfast_moveit_plugin.cpp.o[0m
+[35m[1mScanning dependencies of target rs080n_manipulator_moveit_ikfast_plugin[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/rs080n_manipulator_moveit_ikfast_plugin.dir/src/rs080n_manipulator_ikfast_moveit_plugin.cpp.o[0m
+[ 66%] [32m[1mLinking CXX shared library /home/dan/khi_ws/devel/lib/libkhi_rs025n_manipulator_moveit_ikfast_plugin.so[0m
+[ 83%] [32m[1mLinking CXX shared library /home/dan/khi_ws/devel/lib/libkhi_rs013n_manipulator_moveit_ikfast_plugin.so[0m
+[ 83%] Built target khi_rs025n_manipulator_moveit_ikfast_plugin
+[ 83%] Built target khi_rs013n_manipulator_moveit_ikfast_plugin
+[100%] [32m[1mLinking CXX shared library /home/dan/khi_ws/devel/lib/librs080n_manipulator_moveit_ikfast_plugin.so[0m
+[100%] Built target rs080n_manipulator_moveit_ikfast_plugin

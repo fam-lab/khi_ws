@@ -5,7 +5,7 @@
   <arg name="debug" default="false" />
   <arg name="simulation" default="false" />
   <arg name="viewer" default="false" />
-  <arg name="ip" default="192.168.0.2" />
+  <arg name="ip" default="192.168.56.23" />
   <arg name="period" default="2" />
   <arg name="robot" default="CX165L" />
 
