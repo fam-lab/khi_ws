@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/dan/khi_ws/build/khi_duaro_description/CMakeFiles/CMakeTmp
+Change Dir: /home/rosindustrial/khi_ws/build/khi_duaro_description/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c2842/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c2842.dir/build.make CMakeFiles/cmTC_c2842.dir/build
-make[1]: Entering directory '/home/dan/khi_ws/build/khi_duaro_description/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c2842.dir/CheckSymbolExists.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_c2842.dir/CheckSymbolExists.c.o   -c /home/dan/khi_ws/build/khi_duaro_description/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_c2842
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2842.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_c2842.dir/CheckSymbolExists.c.o  -o cmTC_c2842 -rdynamic 
-CMakeFiles/cmTC_c2842.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_15d73/fast"
+/usr/bin/make -f CMakeFiles/cmTC_15d73.dir/build.make CMakeFiles/cmTC_15d73.dir/build
+make[1]: Entering directory '/home/rosindustrial/khi_ws/build/khi_duaro_description/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_15d73.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_15d73.dir/CheckSymbolExists.c.o   -c /home/rosindustrial/khi_ws/build/khi_duaro_description/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_15d73
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15d73.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_15d73.dir/CheckSymbolExists.c.o  -o cmTC_15d73 -rdynamic 
+CMakeFiles/cmTC_15d73.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_c2842.dir/build.make:97: recipe for target 'cmTC_c2842' failed
-make[1]: *** [cmTC_c2842] Error 1
-make[1]: Leaving directory '/home/dan/khi_ws/build/khi_duaro_description/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_c2842/fast' failed
-make: *** [cmTC_c2842/fast] Error 2
+CMakeFiles/cmTC_15d73.dir/build.make:97: recipe for target 'cmTC_15d73' failed
+make[1]: *** [cmTC_15d73] Error 1
+make[1]: Leaving directory '/home/rosindustrial/khi_ws/build/khi_duaro_description/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_15d73/fast' failed
+make: *** [cmTC_15d73/fast] Error 2
 
-File /home/dan/khi_ws/build/khi_duaro_description/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/rosindustrial/khi_ws/build/khi_duaro_description/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/dan/khi_ws/build/khi_duaro_description/CMakeFiles/CMakeTmp
+Change Dir: /home/rosindustrial/khi_ws/build/khi_duaro_description/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7e2c0/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7e2c0.dir/build.make CMakeFiles/cmTC_7e2c0.dir/build
-make[1]: Entering directory '/home/dan/khi_ws/build/khi_duaro_description/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7e2c0.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_7e2c0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_7e2c0
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e2c0.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_7e2c0.dir/CheckFunctionExists.c.o  -o cmTC_7e2c0 -rdynamic -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_e0d7e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e0d7e.dir/build.make CMakeFiles/cmTC_e0d7e.dir/build
+make[1]: Entering directory '/home/rosindustrial/khi_ws/build/khi_duaro_description/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e0d7e.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e0d7e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e0d7e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0d7e.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_e0d7e.dir/CheckFunctionExists.c.o  -o cmTC_e0d7e -rdynamic -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_7e2c0.dir/build.make:97: recipe for target 'cmTC_7e2c0' failed
-make[1]: *** [cmTC_7e2c0] Error 1
-make[1]: Leaving directory '/home/dan/khi_ws/build/khi_duaro_description/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_7e2c0/fast' failed
-make: *** [cmTC_7e2c0/fast] Error 2
+CMakeFiles/cmTC_e0d7e.dir/build.make:97: recipe for target 'cmTC_e0d7e' failed
+make[1]: *** [cmTC_e0d7e] Error 1
+make[1]: Leaving directory '/home/rosindustrial/khi_ws/build/khi_duaro_description/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e0d7e/fast' failed
+make: *** [cmTC_e0d7e/fast] Error 2
 
 

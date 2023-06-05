@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ddynamic_reconfigure.dir/src/ddynamic_reconfigure.cpp.o"
-  "/home/dan/khi_ws/devel/lib/libddynamic_reconfigure.pdb"
-  "/home/dan/khi_ws/devel/lib/libddynamic_reconfigure.so"
+  "/home/rosindustrial/khi_ws/devel/lib/libddynamic_reconfigure.pdb"
+  "/home/rosindustrial/khi_ws/devel/lib/libddynamic_reconfigure.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/khi_robot_client.dir/src/khi_robot_client.cpp.o"
   "CMakeFiles/khi_robot_client.dir/src/khi_robot_krnx_driver.cpp.o"
-  "/home/dan/khi_ws/devel/lib/libkhi_robot_client.pdb"
-  "/home/dan/khi_ws/devel/lib/libkhi_robot_client.so"
+  "/home/rosindustrial/khi_ws/devel/lib/libkhi_robot_client.pdb"
+  "/home/rosindustrial/khi_ws/devel/lib/libkhi_robot_client.so"
 )
 
 # Per-language clean rules from dependency scanning.

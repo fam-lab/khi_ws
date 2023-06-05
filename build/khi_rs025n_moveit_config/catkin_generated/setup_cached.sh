@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/dan/khi_ws/build/khi_rs025n_moveit_config'
+export PWD='/home/rosindustrial/khi_ws/build/khi_rs025n_moveit_config'

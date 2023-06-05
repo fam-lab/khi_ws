@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/khi_robot_msgs_generate_messages_nodejs"
-  "/home/dan/khi_ws/devel/share/gennodejs/ros/khi_robot_msgs/srv/KhiRobotCmd.js"
+  "/home/rosindustrial/khi_ws/devel/share/gennodejs/ros/khi_robot_msgs/srv/KhiRobotCmd.js"
 )
 
 # Per-language clean rules from dependency scanning.

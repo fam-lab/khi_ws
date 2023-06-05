@@ -1,4 +1,4 @@
-prefix=/home/dan/khi_ws/install
+prefix=/home/rosindustrial/khi_ws/install
 
 Name: khi_cx165l_moveit_config
 Description: Description of khi_cx165l_moveit_config

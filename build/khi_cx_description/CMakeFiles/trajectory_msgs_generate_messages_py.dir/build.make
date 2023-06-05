@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dan/khi_ws/src/khi_cx_description
+CMAKE_SOURCE_DIR = /home/rosindustrial/khi_ws/src/khi_cx_description
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dan/khi_ws/build/khi_cx_description
+CMAKE_BINARY_DIR = /home/rosindustrial/khi_ws/build/khi_cx_description
 
 # Utility rule file for trajectory_msgs_generate_messages_py.
 
@@ -67,6 +67,6 @@ CMakeFiles/trajectory_msgs_generate_messages_py.dir/clean:
 .PHONY : CMakeFiles/trajectory_msgs_generate_messages_py.dir/clean
 
 CMakeFiles/trajectory_msgs_generate_messages_py.dir/depend:
-	cd /home/dan/khi_ws/build/khi_cx_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dan/khi_ws/src/khi_cx_description /home/dan/khi_ws/src/khi_cx_description /home/dan/khi_ws/build/khi_cx_description /home/dan/khi_ws/build/khi_cx_description /home/dan/khi_ws/build/khi_cx_description/CMakeFiles/trajectory_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rosindustrial/khi_ws/build/khi_cx_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rosindustrial/khi_ws/src/khi_cx_description /home/rosindustrial/khi_ws/src/khi_cx_description /home/rosindustrial/khi_ws/build/khi_cx_description /home/rosindustrial/khi_ws/build/khi_cx_description /home/rosindustrial/khi_ws/build/khi_cx_description/CMakeFiles/trajectory_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/trajectory_msgs_generate_messages_py.dir/depend
 

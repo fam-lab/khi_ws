@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/dan/khi_ws/src/khi_rs_ikfast_plugin/include/ikfast.h
+/home/rosindustrial/khi_ws/src/khi_rs_ikfast_plugin/include/ikfast.h
 vector
 -
 list
@@ -14,7 +14,7 @@ list
 stdexcept
 -
 
-/home/dan/khi_ws/src/khi_rs_ikfast_plugin/src/khi_rs013n_manipulator_ikfast_moveit_plugin.cpp
+/home/rosindustrial/khi_ws/src/khi_rs_ikfast_plugin/src/khi_rs013n_manipulator_ikfast_moveit_plugin.cpp
 ros/ros.h
 -
 moveit/kinematics_base/kinematics_base.h
@@ -24,13 +24,13 @@ urdf/model.h
 tf_conversions/tf_kdl.h
 -
 khi_rs013n_manipulator_ikfast_solver.cpp
-/home/dan/khi_ws/src/khi_rs_ikfast_plugin/src/khi_rs013n_manipulator_ikfast_solver.cpp
+/home/rosindustrial/khi_ws/src/khi_rs_ikfast_plugin/src/khi_rs013n_manipulator_ikfast_solver.cpp
 pluginlib/class_list_macros.hpp
 -
 
-/home/dan/khi_ws/src/khi_rs_ikfast_plugin/src/khi_rs013n_manipulator_ikfast_solver.cpp
+/home/rosindustrial/khi_ws/src/khi_rs_ikfast_plugin/src/khi_rs013n_manipulator_ikfast_solver.cpp
 ikfast.h
-/home/dan/khi_ws/src/khi_rs_ikfast_plugin/src/ikfast.h
+/home/rosindustrial/khi_ws/src/khi_rs_ikfast_plugin/src/ikfast.h
 cmath
 -
 vector

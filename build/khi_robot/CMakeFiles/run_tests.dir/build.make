@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dan/khi_ws/src/khi_robot
+CMAKE_SOURCE_DIR = /home/rosindustrial/khi_ws/src/khi_robot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dan/khi_ws/build/khi_robot
+CMAKE_BINARY_DIR = /home/rosindustrial/khi_ws/build/khi_robot
 
 # Utility rule file for run_tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/dan/khi_ws/build/khi_robot && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dan/khi_ws/src/khi_robot /home/dan/khi_ws/src/khi_robot /home/dan/khi_ws/build/khi_robot /home/dan/khi_ws/build/khi_robot /home/dan/khi_ws/build/khi_robot/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rosindustrial/khi_ws/build/khi_robot && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rosindustrial/khi_ws/src/khi_robot /home/rosindustrial/khi_ws/src/khi_robot /home/rosindustrial/khi_ws/build/khi_robot /home/rosindustrial/khi_ws/build/khi_robot /home/rosindustrial/khi_ws/build/khi_robot/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests.dir/depend
 

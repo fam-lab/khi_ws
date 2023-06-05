@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/dan/khi_ws/build/realsense2_camera'
+export PWD='/home/rosindustrial/khi_ws/build/realsense2_camera'

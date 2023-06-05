@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/dan/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv"
+services_str = "/home/rosindustrial/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv"
 pkg_name = "khi_robot_msgs"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

@@ -67,14 +67,14 @@ set(ddynamic_reconfigure_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(ddynamic_reconfigure_SOURCE_PREFIX /home/dan/khi_ws/src/ddynamic_reconfigure-kinetic-devel)
-  set(ddynamic_reconfigure_DEVEL_PREFIX /home/dan/khi_ws/devel)
+  set(ddynamic_reconfigure_SOURCE_PREFIX /home/rosindustrial/khi_ws/src/ddynamic_reconfigure-kinetic-devel)
+  set(ddynamic_reconfigure_DEVEL_PREFIX /home/rosindustrial/khi_ws/devel)
   set(ddynamic_reconfigure_INSTALL_PREFIX "")
   set(ddynamic_reconfigure_PREFIX ${ddynamic_reconfigure_DEVEL_PREFIX})
 else()
   set(ddynamic_reconfigure_SOURCE_PREFIX "")
   set(ddynamic_reconfigure_DEVEL_PREFIX "")
-  set(ddynamic_reconfigure_INSTALL_PREFIX /home/dan/khi_ws/install)
+  set(ddynamic_reconfigure_INSTALL_PREFIX /home/rosindustrial/khi_ws/install)
   set(ddynamic_reconfigure_PREFIX ${ddynamic_reconfigure_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/dan/khi_ws/install/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/rosindustrial/khi_ws/install/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

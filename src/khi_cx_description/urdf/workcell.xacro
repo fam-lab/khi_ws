@@ -10,4 +10,13 @@
 
   <xacro:include filename="$(find khi_cx_description)/urdf/pushcorp.xacro"/>
 
+  <xacro:include filename="$(find realsense2_description)/urdf/_d457.urdf.xacro" />
+  <xacro:arg name="use_nominal_extrinsics" default="false"/>
+
+  <xacro:sensor_d457 parent="pushcorp" use_nominal_extrinsics="$(arg use_nominal_extrinsics)">
+      <origin xyz="-0.23121315000002 -0.02567305 -0.127876751280541" rpy="3.14159 1.5708 0" />
+  </xacro:sensor_d457>
+
 </robot>
+
+

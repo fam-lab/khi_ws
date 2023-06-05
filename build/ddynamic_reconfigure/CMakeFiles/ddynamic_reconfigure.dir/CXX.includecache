@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/dan/khi_ws/src/ddynamic_reconfigure-kinetic-devel/include/ddynamic_reconfigure/ddynamic_reconfigure.h
+/home/rosindustrial/khi_ws/src/ddynamic_reconfigure-kinetic-devel/include/ddynamic_reconfigure/ddynamic_reconfigure.h
 dynamic_reconfigure/server.h
 -
 ddynamic_reconfigure/registered_param.h
@@ -22,7 +22,7 @@ ros/spinner.h
 atomic
 -
 
-/home/dan/khi_ws/src/ddynamic_reconfigure-kinetic-devel/include/ddynamic_reconfigure/ddynamic_reconfigure_utils.h
+/home/rosindustrial/khi_ws/src/ddynamic_reconfigure-kinetic-devel/include/ddynamic_reconfigure/ddynamic_reconfigure_utils.h
 string
 -
 limits
@@ -30,7 +30,7 @@ limits
 vector
 -
 
-/home/dan/khi_ws/src/ddynamic_reconfigure-kinetic-devel/include/ddynamic_reconfigure/registered_param.h
+/home/rosindustrial/khi_ws/src/ddynamic_reconfigure-kinetic-devel/include/ddynamic_reconfigure/registered_param.h
 string
 -
 map
@@ -44,7 +44,7 @@ boost/function.hpp
 dynamic_reconfigure/ParamDescription.h
 -
 
-/home/dan/khi_ws/src/ddynamic_reconfigure-kinetic-devel/src/ddynamic_reconfigure.cpp
+/home/rosindustrial/khi_ws/src/ddynamic_reconfigure-kinetic-devel/src/ddynamic_reconfigure.cpp
 ddynamic_reconfigure/ddynamic_reconfigure.h
 -
 boost/make_unique.hpp

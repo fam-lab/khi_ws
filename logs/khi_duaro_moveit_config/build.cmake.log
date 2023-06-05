@@ -13,16 +13,16 @@ Not searching for unused variables given on the command line.
 -- Detecting CXX compiler ABI info - done
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- Using CATKIN_DEVEL_PREFIX: /home/dan/khi_ws/devel
--- Using CMAKE_PREFIX_PATH: /home/dan/khi_ws/devel;/opt/ros/kinetic
--- This workspace overlays: /home/dan/khi_ws/devel;/opt/ros/kinetic
+-- Using CATKIN_DEVEL_PREFIX: /home/rosindustrial/khi_ws/devel
+-- Using CMAKE_PREFIX_PATH: /home/rosindustrial/khi_ws/devel;/opt/ros/kinetic
+-- This workspace overlays: /home/rosindustrial/khi_ws/devel;/opt/ros/kinetic
 -- Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.12", minimum required is "2")
 -- Using PYTHON_EXECUTABLE: /usr/bin/python2
 -- Using Debian Python package layout
 -- Using empy: /usr/bin/empy
 -- Using CATKIN_ENABLE_TESTING: ON
 -- Call enable_testing()
--- Using CATKIN_TEST_RESULTS_DIR: /home/dan/khi_ws/build/khi_duaro_moveit_config/test_results
+-- Using CATKIN_TEST_RESULTS_DIR: /home/rosindustrial/khi_ws/build/khi_duaro_moveit_config/test_results
 -- Found gtest sources under '/usr/src/gmock': gtests will be built
 -- Found gmock sources under '/usr/src/gmock': gmock will be built
 -- Found PythonInterp: /usr/bin/python2 (found version "2.7.12")
@@ -40,4 +40,4 @@ Not searching for unused variables given on the command line.
 -- BUILD_SHARED_LIBS is on
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/dan/khi_ws/build/khi_duaro_moveit_config
+-- Build files have been written to: /home/rosindustrial/khi_ws/build/khi_duaro_moveit_config

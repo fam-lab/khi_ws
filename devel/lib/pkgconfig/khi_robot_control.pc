@@ -1,4 +1,4 @@
-prefix=/home/dan/khi_ws/devel
+prefix=/home/rosindustrial/khi_ws/devel
 
 Name: khi_robot_control
 Description: Description of khi_robot_control

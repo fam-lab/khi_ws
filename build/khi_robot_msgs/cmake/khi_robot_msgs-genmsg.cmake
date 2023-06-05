@@ -17,9 +17,9 @@ add_custom_target(khi_robot_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/dan/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/rosindustrial/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv" NAME_WE)
 add_custom_target(_khi_robot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "khi_robot_msgs" "/home/dan/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "khi_robot_msgs" "/home/rosindustrial/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv" ""
 )
 
 #
@@ -31,7 +31,7 @@ add_custom_target(_khi_robot_msgs_generate_messages_check_deps_${_filename}
 
 ### Generating Services
 _generate_srv_cpp(khi_robot_msgs
-  "/home/dan/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv"
+  "/home/rosindustrial/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/khi_robot_msgs
@@ -49,7 +49,7 @@ add_custom_target(khi_robot_msgs_generate_messages_cpp
 add_dependencies(khi_robot_msgs_generate_messages khi_robot_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/dan/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/rosindustrial/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv" NAME_WE)
 add_dependencies(khi_robot_msgs_generate_messages_cpp _khi_robot_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -64,7 +64,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS khi_robot_msgs_generate_messages_cp
 
 ### Generating Services
 _generate_srv_eus(khi_robot_msgs
-  "/home/dan/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv"
+  "/home/rosindustrial/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/khi_robot_msgs
@@ -82,7 +82,7 @@ add_custom_target(khi_robot_msgs_generate_messages_eus
 add_dependencies(khi_robot_msgs_generate_messages khi_robot_msgs_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/dan/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/rosindustrial/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv" NAME_WE)
 add_dependencies(khi_robot_msgs_generate_messages_eus _khi_robot_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -97,7 +97,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS khi_robot_msgs_generate_messages_eu
 
 ### Generating Services
 _generate_srv_lisp(khi_robot_msgs
-  "/home/dan/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv"
+  "/home/rosindustrial/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/khi_robot_msgs
@@ -115,7 +115,7 @@ add_custom_target(khi_robot_msgs_generate_messages_lisp
 add_dependencies(khi_robot_msgs_generate_messages khi_robot_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/dan/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/rosindustrial/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv" NAME_WE)
 add_dependencies(khi_robot_msgs_generate_messages_lisp _khi_robot_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -130,7 +130,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS khi_robot_msgs_generate_messages_li
 
 ### Generating Services
 _generate_srv_nodejs(khi_robot_msgs
-  "/home/dan/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv"
+  "/home/rosindustrial/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/khi_robot_msgs
@@ -148,7 +148,7 @@ add_custom_target(khi_robot_msgs_generate_messages_nodejs
 add_dependencies(khi_robot_msgs_generate_messages khi_robot_msgs_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/dan/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/rosindustrial/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv" NAME_WE)
 add_dependencies(khi_robot_msgs_generate_messages_nodejs _khi_robot_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -163,7 +163,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS khi_robot_msgs_generate_messages_no
 
 ### Generating Services
 _generate_srv_py(khi_robot_msgs
-  "/home/dan/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv"
+  "/home/rosindustrial/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/khi_robot_msgs
@@ -181,7 +181,7 @@ add_custom_target(khi_robot_msgs_generate_messages_py
 add_dependencies(khi_robot_msgs_generate_messages khi_robot_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/dan/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv" NAME_WE)
+get_filename_component(_filename "/home/rosindustrial/khi_ws/src/khi_robot_msgs/srv/KhiRobotCmd.srv" NAME_WE)
 add_dependencies(khi_robot_msgs_generate_messages_py _khi_robot_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/khi_robot_msgs_generate_messages_eus"
-  "/home/dan/khi_ws/devel/share/roseus/ros/khi_robot_msgs/srv/KhiRobotCmd.l"
-  "/home/dan/khi_ws/devel/share/roseus/ros/khi_robot_msgs/manifest.l"
+  "/home/rosindustrial/khi_ws/devel/share/roseus/ros/khi_robot_msgs/srv/KhiRobotCmd.l"
+  "/home/rosindustrial/khi_ws/devel/share/roseus/ros/khi_robot_msgs/manifest.l"
 )
 
 # Per-language clean rules from dependency scanning.

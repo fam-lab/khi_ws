@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dan/khi_ws/src/realsense-ros/realsense2_camera/src/base_realsense_node.cpp" "/home/dan/khi_ws/build/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o"
-  "/home/dan/khi_ws/src/realsense-ros/realsense2_camera/src/realsense_node_factory.cpp" "/home/dan/khi_ws/build/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o"
-  "/home/dan/khi_ws/src/realsense-ros/realsense2_camera/src/t265_realsense_node.cpp" "/home/dan/khi_ws/build/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o"
+  "/home/rosindustrial/khi_ws/src/realsense2_camera/src/base_realsense_node.cpp" "/home/rosindustrial/khi_ws/build/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o"
+  "/home/rosindustrial/khi_ws/src/realsense2_camera/src/realsense_node_factory.cpp" "/home/rosindustrial/khi_ws/build/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o"
+  "/home/rosindustrial/khi_ws/src/realsense2_camera/src/t265_realsense_node.cpp" "/home/rosindustrial/khi_ws/build/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -20,10 +20,10 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/dan/khi_ws/devel/include"
-  "/home/dan/khi_ws/src/realsense-ros/realsense2_camera/include"
+  "/home/rosindustrial/khi_ws/devel/include"
+  "/home/rosindustrial/khi_ws/src/realsense2_camera/include"
   "/usr/local/include"
-  "/home/dan/khi_ws/src/ddynamic_reconfigure-kinetic-devel/include"
+  "/home/rosindustrial/khi_ws/src/ddynamic_reconfigure-kinetic-devel/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/opt/ros/kinetic/include/opencv-3.3.1-dev"

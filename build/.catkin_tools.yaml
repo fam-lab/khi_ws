@@ -1,6 +1,6 @@
-devel_space: /home/dan/khi_ws/devel
+devel_space: /home/rosindustrial/khi_ws/devel
 install: false
-install_space: /home/dan/khi_ws/install
+install_space: /home/rosindustrial/khi_ws/install
 profile: default
-source_space: /home/dan/khi_ws/src
-workspace: /home/dan/khi_ws
+source_space: /home/rosindustrial/khi_ws/src
+workspace: /home/rosindustrial/khi_ws

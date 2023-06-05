@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "khi_rs007n_moveit_config"
-PROJECT_SPACE_DIR = "/home/dan/khi_ws/install"
+PROJECT_SPACE_DIR = "/home/rosindustrial/khi_ws/install"
 PROJECT_VERSION = "1.3.0"

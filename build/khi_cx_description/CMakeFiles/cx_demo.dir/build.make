@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dan/khi_ws/src/khi_cx_description
+CMAKE_SOURCE_DIR = /home/rosindustrial/khi_ws/src/khi_cx_description
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dan/khi_ws/build/khi_cx_description
+CMAKE_BINARY_DIR = /home/rosindustrial/khi_ws/build/khi_cx_description
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cx_demo.dir/depend.make
@@ -58,17 +58,17 @@ include CMakeFiles/cx_demo.dir/progress.make
 include CMakeFiles/cx_demo.dir/flags.make
 
 CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o: CMakeFiles/cx_demo.dir/flags.make
-CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o: /home/dan/khi_ws/src/khi_cx_description/src/cx_demo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dan/khi_ws/build/khi_cx_description/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o -c /home/dan/khi_ws/src/khi_cx_description/src/cx_demo.cpp
+CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o: /home/rosindustrial/khi_ws/src/khi_cx_description/src/cx_demo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rosindustrial/khi_ws/build/khi_cx_description/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o -c /home/rosindustrial/khi_ws/src/khi_cx_description/src/cx_demo.cpp
 
 CMakeFiles/cx_demo.dir/src/cx_demo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cx_demo.dir/src/cx_demo.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dan/khi_ws/src/khi_cx_description/src/cx_demo.cpp > CMakeFiles/cx_demo.dir/src/cx_demo.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rosindustrial/khi_ws/src/khi_cx_description/src/cx_demo.cpp > CMakeFiles/cx_demo.dir/src/cx_demo.cpp.i
 
 CMakeFiles/cx_demo.dir/src/cx_demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cx_demo.dir/src/cx_demo.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dan/khi_ws/src/khi_cx_description/src/cx_demo.cpp -o CMakeFiles/cx_demo.dir/src/cx_demo.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rosindustrial/khi_ws/src/khi_cx_description/src/cx_demo.cpp -o CMakeFiles/cx_demo.dir/src/cx_demo.cpp.s
 
 CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o.requires:
 
@@ -88,69 +88,69 @@ cx_demo_OBJECTS = \
 # External object files for target cx_demo
 cx_demo_EXTERNAL_OBJECTS =
 
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: CMakeFiles/cx_demo.dir/build.make
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libcontroller_manager.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libgazebo_ros_api_plugin.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libgazebo_ros_paths_plugin.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/librobot_state_publisher_solver.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libkdl_parser.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/liborocos-kdl.so.1.3.2
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/librviz.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libOgreOverlay.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libOgreMain.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libGLU.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libGL.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libimage_transport.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libinteractive_markers.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/liblaser_geometry.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libclass_loader.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/libPocoFoundation.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libresource_retriever.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libroslib.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/librospack.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libtf.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libtf2_ros.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libactionlib.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libmessage_filters.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libtf2.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/liburdf.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libtinyxml.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/librosconsole_bridge.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libroscpp.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/librosconsole.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/librostime.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libcpp_common.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo: CMakeFiles/cx_demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dan/khi_ws/build/khi_cx_description/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo"
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: CMakeFiles/cx_demo.dir/src/cx_demo.cpp.o
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: CMakeFiles/cx_demo.dir/build.make
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libcontroller_manager.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libgazebo_ros_api_plugin.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libgazebo_ros_paths_plugin.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/librobot_state_publisher_solver.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libkdl_parser.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/liborocos-kdl.so.1.3.2
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/librviz.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libOgreMain.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libGLU.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libGL.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libimage_transport.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libinteractive_markers.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/liblaser_geometry.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libclass_loader.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/libPocoFoundation.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libresource_retriever.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libroslib.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/librospack.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libtf.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libtf2_ros.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libactionlib.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libmessage_filters.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libtf2.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/liburdf.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/librosconsole_bridge.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libroscpp.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/librosconsole.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/librostime.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /opt/ros/kinetic/lib/libcpp_common.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo: CMakeFiles/cx_demo.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rosindustrial/khi_ws/build/khi_cx_description/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cx_demo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/cx_demo.dir/build: /home/dan/khi_ws/devel/lib/khi_cx_description/cx_demo
+CMakeFiles/cx_demo.dir/build: /home/rosindustrial/khi_ws/devel/lib/khi_cx_description/cx_demo
 
 .PHONY : CMakeFiles/cx_demo.dir/build
 
@@ -163,6 +163,6 @@ CMakeFiles/cx_demo.dir/clean:
 .PHONY : CMakeFiles/cx_demo.dir/clean
 
 CMakeFiles/cx_demo.dir/depend:
-	cd /home/dan/khi_ws/build/khi_cx_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dan/khi_ws/src/khi_cx_description /home/dan/khi_ws/src/khi_cx_description /home/dan/khi_ws/build/khi_cx_description /home/dan/khi_ws/build/khi_cx_description /home/dan/khi_ws/build/khi_cx_description/CMakeFiles/cx_demo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rosindustrial/khi_ws/build/khi_cx_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rosindustrial/khi_ws/src/khi_cx_description /home/rosindustrial/khi_ws/src/khi_cx_description /home/rosindustrial/khi_ws/build/khi_cx_description /home/rosindustrial/khi_ws/build/khi_cx_description /home/rosindustrial/khi_ws/build/khi_cx_description/CMakeFiles/cx_demo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cx_demo.dir/depend
 

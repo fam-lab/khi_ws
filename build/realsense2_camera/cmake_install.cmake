@@ -1,8 +1,8 @@
-# Install script for directory: /home/dan/khi_ws/src/realsense-ros/realsense2_camera
+# Install script for directory: /home/rosindustrial/khi_ws/src/realsense2_camera
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dan/khi_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/rosindustrial/khi_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -44,137 +44,137 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/dan/khi_ws/install/_setup_util.py")
+   "/home/rosindustrial/khi_ws/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/dan/khi_ws/install" TYPE PROGRAM FILES "/home/dan/khi_ws/build/realsense2_camera/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/rosindustrial/khi_ws/install" TYPE PROGRAM FILES "/home/rosindustrial/khi_ws/build/realsense2_camera/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/dan/khi_ws/install/env.sh")
+   "/home/rosindustrial/khi_ws/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/dan/khi_ws/install" TYPE PROGRAM FILES "/home/dan/khi_ws/build/realsense2_camera/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/rosindustrial/khi_ws/install" TYPE PROGRAM FILES "/home/rosindustrial/khi_ws/build/realsense2_camera/catkin_generated/installspace/env.sh")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/dan/khi_ws/install/setup.bash;/home/dan/khi_ws/install/local_setup.bash")
+   "/home/rosindustrial/khi_ws/install/setup.bash;/home/rosindustrial/khi_ws/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/dan/khi_ws/install" TYPE FILE FILES
-    "/home/dan/khi_ws/build/realsense2_camera/catkin_generated/installspace/setup.bash"
-    "/home/dan/khi_ws/build/realsense2_camera/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/rosindustrial/khi_ws/install" TYPE FILE FILES
+    "/home/rosindustrial/khi_ws/build/realsense2_camera/catkin_generated/installspace/setup.bash"
+    "/home/rosindustrial/khi_ws/build/realsense2_camera/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/dan/khi_ws/install/setup.sh;/home/dan/khi_ws/install/local_setup.sh")
+   "/home/rosindustrial/khi_ws/install/setup.sh;/home/rosindustrial/khi_ws/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/dan/khi_ws/install" TYPE FILE FILES
-    "/home/dan/khi_ws/build/realsense2_camera/catkin_generated/installspace/setup.sh"
-    "/home/dan/khi_ws/build/realsense2_camera/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/rosindustrial/khi_ws/install" TYPE FILE FILES
+    "/home/rosindustrial/khi_ws/build/realsense2_camera/catkin_generated/installspace/setup.sh"
+    "/home/rosindustrial/khi_ws/build/realsense2_camera/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/dan/khi_ws/install/setup.zsh;/home/dan/khi_ws/install/local_setup.zsh")
+   "/home/rosindustrial/khi_ws/install/setup.zsh;/home/rosindustrial/khi_ws/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/dan/khi_ws/install" TYPE FILE FILES
-    "/home/dan/khi_ws/build/realsense2_camera/catkin_generated/installspace/setup.zsh"
-    "/home/dan/khi_ws/build/realsense2_camera/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/rosindustrial/khi_ws/install" TYPE FILE FILES
+    "/home/rosindustrial/khi_ws/build/realsense2_camera/catkin_generated/installspace/setup.zsh"
+    "/home/rosindustrial/khi_ws/build/realsense2_camera/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/dan/khi_ws/install/.rosinstall")
+   "/home/rosindustrial/khi_ws/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/dan/khi_ws/install" TYPE FILE FILES "/home/dan/khi_ws/build/realsense2_camera/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/rosindustrial/khi_ws/install" TYPE FILE FILES "/home/rosindustrial/khi_ws/build/realsense2_camera/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera/msg" TYPE FILE FILES
-    "/home/dan/khi_ws/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg"
-    "/home/dan/khi_ws/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg"
+    "/home/rosindustrial/khi_ws/src/realsense2_camera/msg/IMUInfo.msg"
+    "/home/rosindustrial/khi_ws/src/realsense2_camera/msg/Extrinsics.msg"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera/cmake" TYPE FILE FILES "/home/dan/khi_ws/build/realsense2_camera/catkin_generated/installspace/realsense2_camera-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera/cmake" TYPE FILE FILES "/home/rosindustrial/khi_ws/build/realsense2_camera/catkin_generated/installspace/realsense2_camera-msg-paths.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/dan/khi_ws/devel/include/realsense2_camera")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/rosindustrial/khi_ws/devel/include/realsense2_camera")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/dan/khi_ws/devel/share/roseus/ros/realsense2_camera")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/rosindustrial/khi_ws/devel/share/roseus/ros/realsense2_camera")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/dan/khi_ws/devel/share/common-lisp/ros/realsense2_camera")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/rosindustrial/khi_ws/devel/share/common-lisp/ros/realsense2_camera")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/dan/khi_ws/devel/share/gennodejs/ros/realsense2_camera")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/rosindustrial/khi_ws/devel/share/gennodejs/ros/realsense2_camera")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/dan/khi_ws/devel/lib/python2.7/dist-packages/realsense2_camera")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/rosindustrial/khi_ws/devel/lib/python2.7/dist-packages/realsense2_camera")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/dan/khi_ws/devel/lib/python2.7/dist-packages/realsense2_camera")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/rosindustrial/khi_ws/devel/lib/python2.7/dist-packages/realsense2_camera")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dan/khi_ws/build/realsense2_camera/catkin_generated/installspace/realsense2_camera.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/rosindustrial/khi_ws/build/realsense2_camera/catkin_generated/installspace/realsense2_camera.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera/cmake" TYPE FILE FILES "/home/dan/khi_ws/build/realsense2_camera/catkin_generated/installspace/realsense2_camera-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera/cmake" TYPE FILE FILES "/home/rosindustrial/khi_ws/build/realsense2_camera/catkin_generated/installspace/realsense2_camera-msg-extras.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera/cmake" TYPE FILE FILES
-    "/home/dan/khi_ws/build/realsense2_camera/catkin_generated/installspace/realsense2_cameraConfig.cmake"
-    "/home/dan/khi_ws/build/realsense2_camera/catkin_generated/installspace/realsense2_cameraConfig-version.cmake"
+    "/home/rosindustrial/khi_ws/build/realsense2_camera/catkin_generated/installspace/realsense2_cameraConfig.cmake"
+    "/home/rosindustrial/khi_ws/build/realsense2_camera/catkin_generated/installspace/realsense2_cameraConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera" TYPE FILE FILES "/home/dan/khi_ws/src/realsense-ros/realsense2_camera/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera" TYPE FILE FILES "/home/rosindustrial/khi_ws/src/realsense2_camera/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -184,12 +184,12 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librealsense2_camera.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/dan/khi_ws/devel/lib/librealsense2_camera.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/rosindustrial/khi_ws/devel/lib/librealsense2_camera.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librealsense2_camera.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librealsense2_camera.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librealsense2_camera.so"
-         OLD_RPATH "/usr/local/lib:/opt/ros/kinetic/lib:/home/dan/khi_ws/devel/lib:"
+         OLD_RPATH "/usr/local/lib:/home/rosindustrial/khi_ws/devel/lib:/opt/ros/kinetic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librealsense2_camera.so")
@@ -198,24 +198,24 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/realsense2_camera" TYPE DIRECTORY FILES "/home/dan/khi_ws/src/realsense-ros/realsense2_camera/include/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/realsense2_camera" TYPE DIRECTORY FILES "/home/rosindustrial/khi_ws/src/realsense2_camera/include/")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera/launch" TYPE DIRECTORY FILES "/home/dan/khi_ws/src/realsense-ros/realsense2_camera/launch/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera/launch" TYPE DIRECTORY FILES "/home/rosindustrial/khi_ws/src/realsense2_camera/launch/")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera/rviz" TYPE DIRECTORY FILES "/home/dan/khi_ws/src/realsense-ros/realsense2_camera/rviz/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera/rviz" TYPE DIRECTORY FILES "/home/rosindustrial/khi_ws/src/realsense2_camera/rviz/")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera" TYPE FILE FILES "/home/dan/khi_ws/src/realsense-ros/realsense2_camera/nodelet_plugins.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera" TYPE FILE FILES "/home/rosindustrial/khi_ws/src/realsense2_camera/nodelet_plugins.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/dan/khi_ws/build/realsense2_camera/gtest/cmake_install.cmake")
+  include("/home/rosindustrial/khi_ws/build/realsense2_camera/gtest/cmake_install.cmake")
 
 endif()
 
@@ -227,5 +227,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dan/khi_ws/build/realsense2_camera/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/rosindustrial/khi_ws/build/realsense2_camera/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

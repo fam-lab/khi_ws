@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/dan/khi_ws/devel/include/khi_robot_msgs/KhiRobotCmd.h
+/home/rosindustrial/khi_ws/devel/include/khi_robot_msgs/KhiRobotCmd.h
 ros/service_traits.h
 -
 khi_robot_msgs/KhiRobotCmdRequest.h
@@ -14,7 +14,7 @@ khi_robot_msgs/KhiRobotCmdRequest.h
 khi_robot_msgs/KhiRobotCmdResponse.h
 -
 
-/home/dan/khi_ws/devel/include/khi_robot_msgs/KhiRobotCmdRequest.h
+/home/rosindustrial/khi_ws/devel/include/khi_robot_msgs/KhiRobotCmdRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/dan/khi_ws/devel/include/khi_robot_msgs/KhiRobotCmdResponse.h
+/home/rosindustrial/khi_ws/devel/include/khi_robot_msgs/KhiRobotCmdResponse.h
 string
 -
 vector
@@ -46,7 +46,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/dan/khi_ws/src/khi_robot_control/include/khi_robot_client.h
+/home/rosindustrial/khi_ws/src/khi_robot_control/include/khi_robot_client.h
 ros/ros.h
 -
 stdio.h
@@ -54,13 +54,13 @@ stdio.h
 khi_robot_driver.h
 -
 
-/home/dan/khi_ws/src/khi_robot_control/include/khi_robot_driver.h
+/home/rosindustrial/khi_ws/src/khi_robot_control/include/khi_robot_driver.h
 string
 -
 khi_robot_msgs/KhiRobotCmd.h
 -
 
-/home/dan/khi_ws/src/khi_robot_control/include/khi_robot_hardware_interface.h
+/home/rosindustrial/khi_ws/src/khi_robot_control/include/khi_robot_hardware_interface.h
 ros/ros.h
 -
 hardware_interface/joint_command_interface.h
@@ -74,7 +74,7 @@ joint_limits_interface/joint_limits_interface.h
 khi_robot_client.h
 -
 
-/home/dan/khi_ws/src/khi_robot_control/src/khi_robot_hardware_interface.cpp
+/home/rosindustrial/khi_ws/src/khi_robot_control/src/khi_robot_hardware_interface.cpp
 khi_robot_hardware_interface.h
 -
 joint_limits_interface/joint_limits_rosparam.h
@@ -82,7 +82,7 @@ joint_limits_interface/joint_limits_rosparam.h
 urdf/model.h
 -
 
-/home/dan/khi_ws/src/khi_robot_control/src/main.cpp
+/home/rosindustrial/khi_ws/src/khi_robot_control/src/main.cpp
 getopt.h
 -
 execinfo.h

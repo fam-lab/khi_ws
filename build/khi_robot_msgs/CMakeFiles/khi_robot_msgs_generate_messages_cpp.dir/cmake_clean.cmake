@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/khi_robot_msgs_generate_messages_cpp"
-  "/home/dan/khi_ws/devel/include/khi_robot_msgs/KhiRobotCmd.h"
+  "/home/rosindustrial/khi_ws/devel/include/khi_robot_msgs/KhiRobotCmd.h"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dan/khi_ws/src/khi_robot_control
+CMAKE_SOURCE_DIR = /home/rosindustrial/khi_ws/src/khi_robot_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dan/khi_ws/build/khi_robot_control
+CMAKE_BINARY_DIR = /home/rosindustrial/khi_ws/build/khi_robot_control
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -58,17 +58,17 @@ include CMakeFiles/main.dir/progress.make
 include CMakeFiles/main.dir/flags.make
 
 CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/main.cpp.o: /home/dan/khi_ws/src/khi_robot_control/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dan/khi_ws/build/khi_robot_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/main.cpp.o -c /home/dan/khi_ws/src/khi_robot_control/src/main.cpp
+CMakeFiles/main.dir/src/main.cpp.o: /home/rosindustrial/khi_ws/src/khi_robot_control/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rosindustrial/khi_ws/build/khi_robot_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/main.cpp.o -c /home/rosindustrial/khi_ws/src/khi_robot_control/src/main.cpp
 
 CMakeFiles/main.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dan/khi_ws/src/khi_robot_control/src/main.cpp > CMakeFiles/main.dir/src/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rosindustrial/khi_ws/src/khi_robot_control/src/main.cpp > CMakeFiles/main.dir/src/main.cpp.i
 
 CMakeFiles/main.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dan/khi_ws/src/khi_robot_control/src/main.cpp -o CMakeFiles/main.dir/src/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rosindustrial/khi_ws/src/khi_robot_control/src/main.cpp -o CMakeFiles/main.dir/src/main.cpp.s
 
 CMakeFiles/main.dir/src/main.cpp.o.requires:
 
@@ -82,17 +82,17 @@ CMakeFiles/main.dir/src/main.cpp.o.provides.build: CMakeFiles/main.dir/src/main.
 
 
 CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o: /home/dan/khi_ws/src/khi_robot_control/src/khi_robot_hardware_interface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dan/khi_ws/build/khi_robot_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o -c /home/dan/khi_ws/src/khi_robot_control/src/khi_robot_hardware_interface.cpp
+CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o: /home/rosindustrial/khi_ws/src/khi_robot_control/src/khi_robot_hardware_interface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rosindustrial/khi_ws/build/khi_robot_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o -c /home/rosindustrial/khi_ws/src/khi_robot_control/src/khi_robot_hardware_interface.cpp
 
 CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dan/khi_ws/src/khi_robot_control/src/khi_robot_hardware_interface.cpp > CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rosindustrial/khi_ws/src/khi_robot_control/src/khi_robot_hardware_interface.cpp > CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.i
 
 CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dan/khi_ws/src/khi_robot_control/src/khi_robot_hardware_interface.cpp -o CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rosindustrial/khi_ws/src/khi_robot_control/src/khi_robot_hardware_interface.cpp -o CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.s
 
 CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o.requires:
 
@@ -113,95 +113,95 @@ main_OBJECTS = \
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: CMakeFiles/main.dir/src/main.cpp.o
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: CMakeFiles/main.dir/build.make
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libcontroller_manager.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/liburdf.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librosconsole_bridge.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librealtime_tools.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libtransmission_interface_parser.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libtransmission_interface_loader.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libtransmission_interface_loader_plugins.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libclass_loader.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/libPocoFoundation.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libroslib.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librospack.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libtinyxml.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libroscpp.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librosconsole.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librostime.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libcpp_common.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /home/dan/khi_ws/devel/lib/libkhi_robot_client.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libcontroller_manager.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/liburdf.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librosconsole_bridge.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librealtime_tools.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libtransmission_interface_parser.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libtransmission_interface_loader.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libtransmission_interface_loader_plugins.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libclass_loader.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/libPocoFoundation.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libroslib.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librospack.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libtinyxml.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libroscpp.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librosconsole.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librostime.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libcpp_common.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: /home/dan/khi_ws/src/khi_robot_control/lib/libkrnx-x86_64.so
-/home/dan/khi_ws/devel/lib/khi_robot_control/main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dan/khi_ws/build/khi_robot_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/dan/khi_ws/devel/lib/khi_robot_control/main"
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: CMakeFiles/main.dir/src/main.cpp.o
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: CMakeFiles/main.dir/src/khi_robot_hardware_interface.cpp.o
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: CMakeFiles/main.dir/build.make
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libcontroller_manager.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/liburdf.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librosconsole_bridge.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librealtime_tools.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libtransmission_interface_parser.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libtransmission_interface_loader.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libtransmission_interface_loader_plugins.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libclass_loader.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/libPocoFoundation.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libroslib.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librospack.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libroscpp.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librosconsole.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librostime.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libcpp_common.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /home/rosindustrial/khi_ws/devel/lib/libkhi_robot_client.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libcontroller_manager.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/liburdf.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librosconsole_bridge.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librealtime_tools.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libtransmission_interface_parser.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libtransmission_interface_loader.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libtransmission_interface_loader_plugins.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libclass_loader.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/libPocoFoundation.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libroslib.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librospack.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libroscpp.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librosconsole.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/librostime.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /opt/ros/kinetic/lib/libcpp_common.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: /home/rosindustrial/khi_ws/src/khi_robot_control/lib/libkrnx-x86_64.so
+/home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main: CMakeFiles/main.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rosindustrial/khi_ws/build/khi_robot_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/main.dir/build: /home/dan/khi_ws/devel/lib/khi_robot_control/main
+CMakeFiles/main.dir/build: /home/rosindustrial/khi_ws/devel/lib/khi_robot_control/main
 
 .PHONY : CMakeFiles/main.dir/build
 
@@ -215,6 +215,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	cd /home/dan/khi_ws/build/khi_robot_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dan/khi_ws/src/khi_robot_control /home/dan/khi_ws/src/khi_robot_control /home/dan/khi_ws/build/khi_robot_control /home/dan/khi_ws/build/khi_robot_control /home/dan/khi_ws/build/khi_robot_control/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rosindustrial/khi_ws/build/khi_robot_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rosindustrial/khi_ws/src/khi_robot_control /home/rosindustrial/khi_ws/src/khi_robot_control /home/rosindustrial/khi_ws/build/khi_robot_control /home/rosindustrial/khi_ws/build/khi_robot_control /home/rosindustrial/khi_ws/build/khi_robot_control/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/main.dir/depend
 

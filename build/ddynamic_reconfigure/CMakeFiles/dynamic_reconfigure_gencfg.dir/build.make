@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dan/khi_ws/src/ddynamic_reconfigure-kinetic-devel
+CMAKE_SOURCE_DIR = /home/rosindustrial/khi_ws/src/ddynamic_reconfigure-kinetic-devel
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dan/khi_ws/build/ddynamic_reconfigure
+CMAKE_BINARY_DIR = /home/rosindustrial/khi_ws/build/ddynamic_reconfigure
 
 # Utility rule file for dynamic_reconfigure_gencfg.
 
@@ -67,6 +67,6 @@ CMakeFiles/dynamic_reconfigure_gencfg.dir/clean:
 .PHONY : CMakeFiles/dynamic_reconfigure_gencfg.dir/clean
 
 CMakeFiles/dynamic_reconfigure_gencfg.dir/depend:
-	cd /home/dan/khi_ws/build/ddynamic_reconfigure && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dan/khi_ws/src/ddynamic_reconfigure-kinetic-devel /home/dan/khi_ws/src/ddynamic_reconfigure-kinetic-devel /home/dan/khi_ws/build/ddynamic_reconfigure /home/dan/khi_ws/build/ddynamic_reconfigure /home/dan/khi_ws/build/ddynamic_reconfigure/CMakeFiles/dynamic_reconfigure_gencfg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rosindustrial/khi_ws/build/ddynamic_reconfigure && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rosindustrial/khi_ws/src/ddynamic_reconfigure-kinetic-devel /home/rosindustrial/khi_ws/src/ddynamic_reconfigure-kinetic-devel /home/rosindustrial/khi_ws/build/ddynamic_reconfigure /home/rosindustrial/khi_ws/build/ddynamic_reconfigure /home/rosindustrial/khi_ws/build/ddynamic_reconfigure/CMakeFiles/dynamic_reconfigure_gencfg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dynamic_reconfigure_gencfg.dir/depend
 

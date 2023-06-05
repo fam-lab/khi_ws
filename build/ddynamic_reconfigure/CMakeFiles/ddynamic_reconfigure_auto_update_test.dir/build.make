@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dan/khi_ws/src/ddynamic_reconfigure-kinetic-devel
+CMAKE_SOURCE_DIR = /home/rosindustrial/khi_ws/src/ddynamic_reconfigure-kinetic-devel
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dan/khi_ws/build/ddynamic_reconfigure
+CMAKE_BINARY_DIR = /home/rosindustrial/khi_ws/build/ddynamic_reconfigure
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/depend.make
@@ -58,17 +58,17 @@ include CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/progress.make
 include CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/flags.make
 
 CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/test/ddynamic_reconfigure_auto_update_test.cpp.o: CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/flags.make
-CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/test/ddynamic_reconfigure_auto_update_test.cpp.o: /home/dan/khi_ws/src/ddynamic_reconfigure-kinetic-devel/test/ddynamic_reconfigure_auto_update_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dan/khi_ws/build/ddynamic_reconfigure/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/test/ddynamic_reconfigure_auto_update_test.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/test/ddynamic_reconfigure_auto_update_test.cpp.o -c /home/dan/khi_ws/src/ddynamic_reconfigure-kinetic-devel/test/ddynamic_reconfigure_auto_update_test.cpp
+CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/test/ddynamic_reconfigure_auto_update_test.cpp.o: /home/rosindustrial/khi_ws/src/ddynamic_reconfigure-kinetic-devel/test/ddynamic_reconfigure_auto_update_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rosindustrial/khi_ws/build/ddynamic_reconfigure/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/test/ddynamic_reconfigure_auto_update_test.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/test/ddynamic_reconfigure_auto_update_test.cpp.o -c /home/rosindustrial/khi_ws/src/ddynamic_reconfigure-kinetic-devel/test/ddynamic_reconfigure_auto_update_test.cpp
 
 CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/test/ddynamic_reconfigure_auto_update_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/test/ddynamic_reconfigure_auto_update_test.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dan/khi_ws/src/ddynamic_reconfigure-kinetic-devel/test/ddynamic_reconfigure_auto_update_test.cpp > CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/test/ddynamic_reconfigure_auto_update_test.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rosindustrial/khi_ws/src/ddynamic_reconfigure-kinetic-devel/test/ddynamic_reconfigure_auto_update_test.cpp > CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/test/ddynamic_reconfigure_auto_update_test.cpp.i
 
 CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/test/ddynamic_reconfigure_auto_update_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/test/ddynamic_reconfigure_auto_update_test.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dan/khi_ws/src/ddynamic_reconfigure-kinetic-devel/test/ddynamic_reconfigure_auto_update_test.cpp -o CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/test/ddynamic_reconfigure_auto_update_test.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rosindustrial/khi_ws/src/ddynamic_reconfigure-kinetic-devel/test/ddynamic_reconfigure_auto_update_test.cpp -o CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/test/ddynamic_reconfigure_auto_update_test.cpp.s
 
 CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/test/ddynamic_reconfigure_auto_update_test.cpp.o.requires:
 
@@ -88,35 +88,35 @@ ddynamic_reconfigure_auto_update_test_OBJECTS = \
 # External object files for target ddynamic_reconfigure_auto_update_test
 ddynamic_reconfigure_auto_update_test_EXTERNAL_OBJECTS =
 
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/test/ddynamic_reconfigure_auto_update_test.cpp.o
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/build.make
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /home/dan/khi_ws/devel/lib/libddynamic_reconfigure.so
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /opt/ros/kinetic/lib/libroscpp.so
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /opt/ros/kinetic/lib/librosconsole.so
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /opt/ros/kinetic/lib/librostime.so
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /opt/ros/kinetic/lib/libcpp_common.so
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dan/khi_ws/build/ddynamic_reconfigure/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test"
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/test/ddynamic_reconfigure_auto_update_test.cpp.o
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/build.make
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /home/rosindustrial/khi_ws/devel/lib/libddynamic_reconfigure.so
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /opt/ros/kinetic/lib/libroscpp.so
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /opt/ros/kinetic/lib/librosconsole.so
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /opt/ros/kinetic/lib/librostime.so
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /opt/ros/kinetic/lib/libcpp_common.so
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test: CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rosindustrial/khi_ws/build/ddynamic_reconfigure/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/build: /home/dan/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test
+CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/build: /home/rosindustrial/khi_ws/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test
 
 .PHONY : CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/build
 
@@ -129,6 +129,6 @@ CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/clean:
 .PHONY : CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/clean
 
 CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/depend:
-	cd /home/dan/khi_ws/build/ddynamic_reconfigure && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dan/khi_ws/src/ddynamic_reconfigure-kinetic-devel /home/dan/khi_ws/src/ddynamic_reconfigure-kinetic-devel /home/dan/khi_ws/build/ddynamic_reconfigure /home/dan/khi_ws/build/ddynamic_reconfigure /home/dan/khi_ws/build/ddynamic_reconfigure/CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rosindustrial/khi_ws/build/ddynamic_reconfigure && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rosindustrial/khi_ws/src/ddynamic_reconfigure-kinetic-devel /home/rosindustrial/khi_ws/src/ddynamic_reconfigure-kinetic-devel /home/rosindustrial/khi_ws/build/ddynamic_reconfigure /home/rosindustrial/khi_ws/build/ddynamic_reconfigure /home/rosindustrial/khi_ws/build/ddynamic_reconfigure/CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ddynamic_reconfigure_auto_update_test.dir/depend
 

@@ -7,4 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/dan/khi_ws/build/khi_rs_gazebo'
+export PWD='/home/rosindustrial/khi_ws/build/khi_rs_gazebo'
+export PYTHONPATH="/home/rosindustrial/khi_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
